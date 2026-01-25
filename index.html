@@ -3,210 +3,290 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glowby - Tetris meets 2048</title>
-    <meta name="description" content="Glowby is an addictive puzzle game combining Tetris and 2048. Drop tiles, merge numbers, beat the timer!">
+    <title>Glowby - Drop, Match & Merge to 2048!</title>
+    <meta name="description" content="Glowby is a free puzzle game combining Tetris-style dropping with 2048 merging. Race against time, create combos, and compete on global leaderboards!">
+    <meta name="keywords" content="puzzle game, 2048, merge, number game, brain game, casual game, iOS game">
     <link rel="canonical" href="https://stanstanislaw.github.io/glowby/">
-    <meta property="og:title" content="Glowby - Tetris meets 2048">
-    <meta property="og:description" content="An addictive puzzle game combining Tetris and 2048. Drop tiles, merge numbers, beat the timer!">
+    
+    <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Glowby - Drop, Match & Merge to 2048!">
+    <meta property="og:description" content="A fresh twist on number puzzles. Drop tiles, merge matching numbers, race the timer!">
+    <meta property="og:image" content="https://stanstanislaw.github.io/glowby/og-image.png">
+    
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-            line-height: 1.7;
-            color: #e2e8f0;
-            background: #080812;
-            background-image: radial-gradient(ellipse 100% 70% at 50% 0%, rgba(139, 92, 246, 0.2) 0%, transparent 50%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0a0a16 0%, #1a1a2e 50%, #16213e 100%);
+            color: white;
             min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 40px 20px;
         }
         .hero {
             text-align: center;
-            max-width: 600px;
-            margin-bottom: 40px;
+            padding: 60px 20px;
+            background: radial-gradient(ellipse at center bottom, rgba(139, 92, 246, 0.3) 0%, transparent 70%);
         }
         .logo {
-            font-family: 'Archivo Black', sans-serif;
             font-size: 4rem;
-            background: linear-gradient(135deg, #a855f7 0%, #8b5cf6 50%, #6366f1 100%);
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 3rem;
+            background: linear-gradient(135deg, #8b5cf6, #a855f7, #d946ef);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            margin-bottom: 20px;
-            text-shadow: 0 0 60px rgba(139, 92, 246, 0.5);
+            margin-bottom: 15px;
         }
         .tagline {
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             color: #94a3b8;
             margin-bottom: 30px;
         }
-        .cta-btn {
+        .app-badge {
             display: inline-block;
-            background: linear-gradient(135deg, #8b5cf6, #a855f7);
-            color: white;
-            padding: 16px 40px;
-            border-radius: 50px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            text-decoration: none;
-            box-shadow: 0 4px 30px rgba(139, 92, 246, 0.4);
-            transition: all 0.3s ease;
+            margin: 20px 10px;
         }
-        .cta-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 40px rgba(139, 92, 246, 0.5);
+        .app-badge img {
+            height: 50px;
         }
         .features {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            max-width: 900px;
-            margin: 40px 0;
+            gap: 25px;
         }
         .feature {
-            background: linear-gradient(160deg, rgba(20, 15, 35, 0.9) 0%, rgba(10, 8, 20, 0.95) 100%);
+            background: rgba(255,255,255,0.05);
             border: 1px solid rgba(139, 92, 246, 0.2);
             border-radius: 16px;
             padding: 25px;
             text-align: center;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .feature:hover {
+            transform: translateY(-5px);
+            border-color: rgba(139, 92, 246, 0.5);
         }
         .feature-icon {
-            width: 50px;
-            height: 50px;
-            background: rgba(139, 92, 246, 0.2);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 15px;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
         }
-        .feature-icon svg { width: 28px; height: 28px; fill: #a855f7; }
-        .feature h3 { color: #fff; margin-bottom: 8px; font-size: 1.1rem; }
-        .feature p { color: #94a3b8; font-size: 0.9rem; margin: 0; }
+        .feature h3 {
+            color: #a855f7;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        .feature p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
         .how-to-play {
-            background: linear-gradient(160deg, rgba(20, 15, 35, 0.9) 0%, rgba(10, 8, 20, 0.95) 100%);
-            border: 1px solid rgba(139, 92, 246, 0.2);
-            border-radius: 24px;
-            padding: 40px;
-            max-width: 600px;
-            margin: 20px 0;
+            background: rgba(139, 92, 246, 0.1);
+            padding: 60px 20px;
+            text-align: center;
         }
         .how-to-play h2 {
-            font-family: 'Archivo Black', sans-serif;
-            color: #fff;
-            text-align: center;
-            margin-bottom: 25px;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #a855f7;
+        }
+        .steps {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
         }
         .step {
-            display: flex;
-            align-items: flex-start;
-            gap: 15px;
-            margin-bottom: 20px;
+            flex: 1;
+            min-width: 200px;
+            max-width: 250px;
         }
-        .step-num {
-            width: 32px;
-            height: 32px;
+        .step-number {
+            width: 50px;
+            height: 50px;
             background: linear-gradient(135deg, #8b5cf6, #a855f7);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: 700;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 15px;
+        }
+        .step h4 {
+            color: white;
+            margin-bottom: 8px;
+        }
+        .step p {
+            color: #94a3b8;
             font-size: 0.9rem;
-            flex-shrink: 0;
         }
-        .step-text { color: #94a3b8; }
-        .step-text strong { color: #e2e8f0; }
-        .footer {
-            margin-top: 60px;
+        .cta-section {
             text-align: center;
-            color: #64748b;
-            font-size: 0.85rem;
+            padding: 60px 20px;
         }
-        .footer-links { margin-bottom: 15px; }
+        .cta-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .cta-section p {
+            color: #94a3b8;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+        footer {
+            background: rgba(0,0,0,0.3);
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .footer-links {
+            margin-bottom: 20px;
+        }
         .footer-links a {
             color: #8b5cf6;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 15px;
+            font-size: 0.95rem;
         }
-        .footer-links a:hover { text-decoration: underline; }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        .copyright {
+            color: #64748b;
+            font-size: 0.85rem;
+        }
+        .languages {
+            margin-top: 15px;
+            color: #64748b;
+            font-size: 0.85rem;
+        }
+        
         @media (max-width: 600px) {
-            .logo { font-size: 3rem; }
+            h1 { font-size: 2rem; }
             .tagline { font-size: 1.1rem; }
-            .how-to-play { padding: 25px 20px; }
+            .features { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
-    <div class="hero">
-        <h1 class="logo">GLOWBY</h1>
-        <p class="tagline">Tetris meets 2048 — Drop, merge, and climb the leaderboard!</p>
-        <a href="https://apps.apple.com/app/glowby" class="cta-btn">Download on App Store</a>
-    </div>
+    <section class="hero">
+        <div class="logo">🧠</div>
+        <h1>Glowby</h1>
+        <p class="tagline">Drop, Match & Merge to 2048!</p>
+        <p style="color: #64748b; max-width: 500px; margin: 0 auto 30px;">
+            A fresh twist on number puzzles. Drop tiles, merge matching numbers, race the timer, and compete for the highest score!
+        </p>
+        
+        <!-- App Store Badge - Replace with actual link when published -->
+        <div class="app-badge">
+            <a href="#" target="_blank">
+                <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store">
+            </a>
+        </div>
+    </section>
 
-    <div class="features">
+    <section class="features">
         <div class="feature">
-            <div class="feature-icon">
-                <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14h-2v-4H8v-2h4V7h2v4h4v2h-4v4z"/></svg>
-            </div>
-            <h3>Merge Tiles</h3>
-            <p>Combine matching numbers to create higher values. Can you reach 2048?</p>
+            <div class="feature-icon">🎮</div>
+            <h3>Easy to Learn</h3>
+            <p>Simple controls - just tap to drop tiles. Master it in seconds, enjoy it for hours!</p>
         </div>
         <div class="feature">
-            <div class="feature-icon">
-                <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
-            </div>
-            <h3>Beat the Timer</h3>
-            <p>Every drop counts! Make quick decisions as the timer pressure builds.</p>
+            <div class="feature-icon">⏱️</div>
+            <h3>Race the Timer</h3>
+            <p>Every move counts! Drop tiles before time runs out. The faster you think, the longer you survive.</p>
         </div>
         <div class="feature">
-            <div class="feature-icon">
-                <svg viewBox="0 0 24 24"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2z"/></svg>
-            </div>
+            <div class="feature-icon">🔥</div>
+            <h3>Chain Combos</h3>
+            <p>Create massive chain reactions! Merge multiple tiles in one drop for combo multipliers.</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">🏆</div>
             <h3>Global Leaderboards</h3>
-            <p>Compete with players worldwide. Climb the ranks and prove your skills!</p>
+            <p>Compete with players worldwide! Climb the ranks and become the ultimate puzzle master.</p>
         </div>
-    </div>
+        <div class="feature">
+            <div class="feature-icon">✨</div>
+            <h3>Unlock Skins</h3>
+            <p>Customize your Glowby with unlockable skins! Earn them through achievements or purchase with coins.</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">🌍</div>
+            <h3>10 Languages</h3>
+            <p>Play in English, German, French, Spanish, Italian, Portuguese, Ukrainian, Japanese, Korean, or Chinese!</p>
+        </div>
+    </section>
 
-    <div class="how-to-play">
+    <section class="how-to-play">
         <h2>How to Play</h2>
-        <div class="step">
-            <div class="step-num">1</div>
-            <div class="step-text"><strong>Drop Tiles</strong> — Tap a column to drop the current tile</div>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h4>Drop Tiles</h4>
+                <p>Tap a column to drop the current tile</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h4>Merge Numbers</h4>
+                <p>Match identical tiles to combine them</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h4>Beat the Timer</h4>
+                <p>Drop before time runs out! ⏱️</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h4>Avoid Asteroids!</h4>
+                <p>Don't let tiles reach the danger zone! ☄️</p>
+            </div>
+            <div class="step">
+                <div class="step-number">5</div>
+                <h4>Reach 2048!</h4>
+                <p>Keep merging and climb the leaderboard</p>
+            </div>
         </div>
-        <div class="step">
-            <div class="step-num">2</div>
-            <div class="step-text"><strong>Merge Numbers</strong> — Match identical tiles to combine them</div>
-        </div>
-        <div class="step">
-            <div class="step-num">3</div>
-            <div class="step-text"><strong>Beat the Timer</strong> — Drop before time runs out!</div>
-        </div>
-        <div class="step">
-            <div class="step-num">4</div>
-            <div class="step-text"><strong>Avoid Asteroids!</strong> — Don't let tiles reach the danger zone!</div>
-        </div>
-        <div class="step">
-            <div class="step-num">5</div>
-            <div class="step-text"><strong>Reach 2048!</strong> — Keep merging and climb the leaderboard</div>
-        </div>
-    </div>
+    </section>
 
-    <footer class="footer">
+    <section class="cta-section">
+        <h2>Ready to Play?</h2>
+        <p>Download Glowby free on the App Store and start your puzzle journey!</p>
+        <div class="app-badge">
+            <a href="#" target="_blank">
+                <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store">
+            </a>
+        </div>
+    </section>
+
+    <footer>
         <div class="footer-links">
             <a href="privacy-policy.html">Privacy Policy</a>
             <a href="terms-of-service.html">Terms of Service</a>
             <a href="support.html">Support</a>
+            <a href="impressum.html">Impressum</a>
+            <a href="commercial-disclosure-japan.html">特定商取引法</a>
         </div>
-        <p>Stanisław Pawluczuk | Jednoosobowa Działalność Gospodarcza</p>
-        <p>NIP: 1231476789 | REGON: 387249521</p>
-        <p style="margin-top: 10px;"><a href="mailto:glowbygame@pm.me">glowbygame@pm.me</a></p>
+        <p class="copyright">
+            © 2026 Stanisław Pawluczuk. All rights reserved.<br>
+            Glowby and the Glowby character are trademarks of Stanisław Pawluczuk.
+        </p>
+        <p style="color: #64748b; font-size: 0.8rem; margin-top: 15px;">
+            Stanisław Pawluczuk | Jednoosobowa Działalność Gospodarcza<br>
+            [YOUR_VIRTUAL_OFFICE_ADDRESS]<br>
+            NIP: 1231476789 | REGON: 387249521<br>
+            Contact: <a href="mailto:glowbygame@pm.me" style="color: #8b5cf6;">glowbygame@pm.me</a>
+        </p>
+        <p class="languages">
+            🌍 Available in: English • Deutsch • Français • Español • Italiano • Português • Українська • 日本語 • 한국어 • 简体中文
+        </p>
     </footer>
 </body>
 </html>
