@@ -4,217 +4,233 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glowby - Support</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
             line-height: 1.7;
-            color: #1a1a2e;
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            color: #e2e8f0;
+            background: #080812;
+            background-image: radial-gradient(ellipse 100% 70% at 50% 0%, rgba(139, 92, 246, 0.15) 0%, transparent 50%);
+            min-height: 100vh;
             padding: 20px;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
-            background: white;
+            background: linear-gradient(160deg, rgba(20, 15, 35, 0.95) 0%, rgba(10, 8, 20, 0.98) 100%);
             padding: 40px;
-            border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border-radius: 24px;
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            box-shadow: 0 0 60px rgba(139, 92, 246, 0.1), 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+        .logo { text-align: center; margin-bottom: 30px; }
+        .logo-text {
+            font-family: 'Archivo Black', sans-serif;
+            font-size: 2rem;
+            background: linear-gradient(135deg, #a855f7 0%, #8b5cf6 50%, #6366f1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
         h1 {
-            color: #8b5cf6;
+            font-family: 'Archivo Black', sans-serif;
+            color: #fff;
             margin-bottom: 10px;
-            font-size: 2rem;
+            font-size: 1.8rem;
+            text-align: center;
         }
         .subtitle {
             color: #64748b;
             margin-bottom: 30px;
+            font-size: 0.95rem;
+            text-align: center;
         }
         h2 {
-            color: #1a1a2e;
+            color: #a855f7;
             margin-top: 35px;
             margin-bottom: 15px;
             padding-bottom: 8px;
-            border-bottom: 2px solid #8b5cf6;
-            font-size: 1.3rem;
+            border-bottom: 1px solid rgba(139, 92, 246, 0.3);
+            font-size: 1.2rem;
+            font-weight: 600;
         }
         h3 {
-            color: #475569;
+            color: #c4b5fd;
             margin-top: 20px;
             margin-bottom: 10px;
-            font-size: 1.1rem;
-        }
-        p { margin-bottom: 15px; color: #334155; }
-        ul {
-            margin-bottom: 15px;
-            padding-left: 25px;
-            color: #334155;
-        }
-        li { margin-bottom: 8px; }
-        a { color: #8b5cf6; }
-        .faq-item {
-            background: #f8fafc;
-            border-radius: 12px;
-            padding: 20px;
-            margin: 15px 0;
-        }
-        .faq-question {
+            font-size: 1rem;
             font-weight: 600;
-            color: #1a1a2e;
-            margin-bottom: 10px;
         }
-        .faq-answer {
-            color: #475569;
-        }
+        p { margin-bottom: 15px; color: #94a3b8; }
+        ul, ol { margin-bottom: 15px; padding-left: 25px; color: #94a3b8; }
+        li { margin-bottom: 8px; }
+        a { color: #a855f7; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        strong { color: #e2e8f0; }
         .contact-box {
-            background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
-            color: white;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(168, 85, 247, 0.1) 100%);
+            border: 1px solid rgba(139, 92, 246, 0.3);
             padding: 25px;
-            border-radius: 12px;
-            margin-top: 30px;
+            margin: 25px 0;
+            border-radius: 16px;
+            text-align: center;
         }
-        .contact-box a { color: #e0e7ff; }
-        .how-to-play {
-            background: #f0fdf4;
-            border-left: 4px solid #22c55e;
+        .contact-box p { margin-bottom: 10px; }
+        .contact-email {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #a855f7;
+        }
+        .faq-item {
+            background: rgba(139, 92, 246, 0.05);
+            border: 1px solid rgba(139, 92, 246, 0.1);
+            border-radius: 12px;
             padding: 20px;
+            margin-bottom: 15px;
+        }
+        .faq-item h3 {
+            margin-top: 0;
+            color: #e2e8f0;
+        }
+        .faq-item p { margin-bottom: 0; }
+        .tip-box {
+            background: rgba(34, 197, 94, 0.1);
+            border-left: 3px solid #22c55e;
+            padding: 15px 20px;
             margin: 20px 0;
             border-radius: 0 12px 12px 0;
         }
-        .button {
-            display: inline-block;
-            background: #8b5cf6;
-            color: white;
-            padding: 12px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            margin-top: 10px;
+        .tip-box p { color: #86efac; margin-bottom: 0; }
+        .warning-box {
+            background: rgba(251, 191, 36, 0.1);
+            border-left: 3px solid #fbbf24;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 12px 12px 0;
         }
-        .button:hover {
-            background: #7c3aed;
+        .warning-box p { color: #fcd34d; margin-bottom: 0; }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(139, 92, 246, 0.2);
+            text-align: center;
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+        .footer a { color: #8b5cf6; }
+        @media (max-width: 600px) {
+            .container { padding: 24px 20px; }
+            h1 { font-size: 1.5rem; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🧠 Glowby Support</h1>
-        <p class="subtitle">We're here to help!</p>
-
-        <h2>📱 How to Play</h2>
+        <div class="logo"><span class="logo-text">GLOWBY</span></div>
         
-        <div class="how-to-play">
-            <h3>Basic Rules</h3>
-            <ol>
-                <li><strong>Drop tiles</strong> by tapping the column where you want them to fall</li>
-                <li><strong>Merge matching numbers</strong> - when two identical tiles touch, they combine!</li>
-                <li><strong>Race the timer</strong> - drop tiles before time runs out</li>
-                <li><strong>Avoid the Asteroid Field!</strong> - if any tile lands in the danger zone at the bottom, the game ends instantly! ☄️</li>
-                <li><strong>Reach 2048</strong> - combine tiles to create higher numbers</li>
-                <li><strong>Beat your high score</strong> - compete on the global leaderboard!</li>
-            </ol>
-            
-            <h3>Tips for Success</h3>
-            <ul>
-                <li>🎯 Plan ahead - think about where tiles will merge</li>
-                <li>⚡ Create chain reactions for massive combos</li>
-                <li>🧠 Keep the board organized - don't let tiles pile up!</li>
-                <li>⏱️ Watch the timer - it gets faster as you progress</li>
-                <li>☄️ Watch the asteroid field - if tiles get too high, you're in danger!</li>
-            </ul>
-        </div>
-
-        <h2>❓ Frequently Asked Questions</h2>
-
-        <div class="faq-item">
-            <p class="faq-question">Q: Is Glowby free to play?</p>
-            <p class="faq-answer">Yes! Glowby is completely free to download and play. There are optional in-app purchases for coins and skins, but they are not required to enjoy the full game.</p>
-        </div>
-
-        <div class="faq-item">
-            <p class="faq-question">Q: How do I earn coins?</p>
-            <p class="faq-answer">You earn coins by playing the game - the higher your score, the more coins you earn! You can also watch optional rewarded video ads for bonus coins.</p>
-        </div>
-
-        <div class="faq-item">
-            <p class="faq-question">Q: How do leaderboards work?</p>
-            <p class="faq-answer">Your best scores are automatically submitted to our global leaderboards. You can set a display name in the game settings to show on the leaderboard. Internet connection is required for leaderboards.</p>
-        </div>
-
-        <div class="faq-item">
-            <p class="faq-question">Q: Can I play offline?</p>
-            <p class="faq-answer">Yes! The core game works offline. However, leaderboards and rewarded ads require an internet connection.</p>
-        </div>
-
-        <div class="faq-item">
-            <p class="faq-question">Q: How do I change my display name?</p>
-            <p class="faq-answer">Go to Settings (gear icon) in the game and tap on "Change Name". Your name will update on the leaderboard after your next score submission.</p>
-        </div>
-
-        <div class="faq-item">
-            <p class="faq-question">Q: What skins are available?</p>
-            <p class="faq-answer">Glowby has many skins to unlock! Some can be purchased with coins, others are earned by reaching milestones (like achieving 2048 or 4096), and special skins are available through various means.</p>
-        </div>
-
-        <div class="faq-item">
-            <p class="faq-question">Q: My progress was lost. Can I recover it?</p>
-            <p class="faq-answer">Game progress is stored locally on your device. If you uninstall the app or reset your device, progress cannot be recovered. We recommend not deleting the app if you want to keep your progress.</p>
-        </div>
-
-        <div class="faq-item">
-            <p class="faq-question">Q: How do I delete my data?</p>
-            <p class="faq-answer">Go to Settings in the game and tap "Delete Account". This will remove your leaderboard entries and reset all local data. This action cannot be undone.</p>
-        </div>
-
-        <div class="faq-item">
-            <p class="faq-question">Q: Can I get a refund for a purchase?</p>
-            <p class="faq-answer">Refunds are handled by Apple through the App Store. Visit <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a> to request a refund from Apple.</p>
-        </div>
-
-        <div class="faq-item">
-            <p class="faq-question">Q: How do I disable personalized ads?</p>
-            <p class="faq-answer">You can control ad personalization in your device settings: Settings → Privacy → Tracking → disable for Glowby. You can also opt out when the consent prompt appears on first launch.</p>
-        </div>
-
-        <h2>🐛 Report a Bug</h2>
-        <p>Found a bug or issue? Please help us improve by reporting it! When contacting us, please include:</p>
-        <ul>
-            <li>Your device model (e.g., iPhone 15 Pro)</li>
-            <li>iOS version (e.g., iOS 17.2)</li>
-            <li>Game version (shown in Settings)</li>
-            <li>Description of the issue</li>
-            <li>Steps to reproduce the bug (if possible)</li>
-        </ul>
-
-        <h2>💡 Feature Requests</h2>
-        <p>Have an idea to make Glowby better? We'd love to hear it! Send us your suggestions and we'll consider them for future updates.</p>
-
-        <h2>📋 Legal Documents</h2>
-        <ul>
-            <li><a href="privacy-policy.html">Privacy Policy</a></li>
-            <li><a href="terms-of-service.html">Terms of Service</a></li>
-            <li><a href="impressum.html">Impressum (German Legal Notice)</a></li>
-            <li><a href="commercial-disclosure-japan.html">特定商取引法に基づく表記 (Japan Commercial Disclosure)</a></li>
-        </ul>
+        <h1>Support Center</h1>
+        <p class="subtitle">We're here to help! Find answers below or contact us directly.</p>
 
         <div class="contact-box">
-            <h2 style="color: white; margin-top: 0; border: none;">📧 Contact Us</h2>
-            <p>For support, feedback, bug reports, or any questions:</p>
-            <p style="font-size: 1.2rem; margin-top: 15px;">
-                <strong>Email:</strong> <a href="mailto:glowbygame@pm.me">glowbygame@pm.me</a>
-            </p>
-            <p style="margin-top: 15px; font-size: 0.9rem; opacity: 0.9;">
-                We typically respond within 24-48 hours.
-            </p>
+            <p><strong>Need help?</strong></p>
+            <p class="contact-email"><a href="mailto:glowbygame@pm.me">glowbygame@pm.me</a></p>
+            <p style="font-size: 0.85rem; color: #64748b;">We typically respond within 24-48 hours</p>
         </div>
 
-        <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #e2e8f0;">
-            <p style="color: #64748b; font-size: 0.85rem;">
-                © 2026 Glowby. All rights reserved.
-            </p>
-            <p style="color: #94a3b8; font-size: 0.8rem; margin-top: 10px;">
-                Stanisław Pawluczuk | Jednoosobowa Działalność Gospodarcza<br>
-                [YOUR_VIRTUAL_OFFICE_ADDRESS]<br>
-                NIP: 1231476789 | REGON: 387249521
+        <h2>How to Play</h2>
+        
+        <h3>Basic Rules</h3>
+        <ol>
+            <li><strong>Drop Tiles</strong> — Tap a column to drop the current tile</li>
+            <li><strong>Merge Numbers</strong> — When identical tiles touch, they combine (2+2=4, 4+4=8, etc.)</li>
+            <li><strong>Beat the Timer</strong> — Drop your tile before time runs out, or the game ends!</li>
+            <li><strong>Avoid the Asteroid Field!</strong> — If any tile lands in the danger zone at the bottom, the game ends instantly!</li>
+            <li><strong>Reach 2048</strong> — Keep merging to reach the golden 2048 tile and beyond!</li>
+        </ol>
+
+        <h3>Tips for High Scores</h3>
+        <ul>
+            <li><strong>Build combos</strong> — Chain multiple merges for bonus points!</li>
+            <li><strong>Watch the asteroid field</strong> — If tiles get too high, you're in danger!</li>
+            <li><strong>Plan ahead</strong> — Look at your next tile and position strategically</li>
+            <li><strong>Stay calm</strong> — The timer gets faster as you progress. Stay focused!</li>
+        </ul>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <h3>How do I restore my purchases?</h3>
+            <p>Go to Settings → Shop → Restore Purchases. This will recover any previously purchased items on your Apple ID.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Why did I lose my progress?</h3>
+            <p>Progress is stored locally on your device. If you reinstalled the app or switched devices, your progress may not transfer. For leaderboard scores, make sure you're signed in with the same username.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I change my username?</h3>
+            <p>Go to Settings and tap the edit button next to your username. Note: Inappropriate names may be reset.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I delete my account?</h3>
+            <p>Go to Settings → scroll to the bottom → tap "Delete Account & Data". This will permanently remove your leaderboard entries and local data.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Can I play offline?</h3>
+            <p>Yes! The core game works offline. However, leaderboards and cloud saves require an internet connection.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I disable ads?</h3>
+            <p>Purchase the "Free Continues" pack in the Shop to remove interstitial ads and get unlimited continues.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>The game is running slowly. What can I do?</h3>
+            <p>Try enabling "Smooth Mode" in Settings → Performance. This reduces visual effects for better performance on older devices.</p>
+        </div>
+
+        <h2>Report a Bug</h2>
+        <p>Found a bug? Please email us with:</p>
+        <ul>
+            <li>Your device model (e.g., iPhone 14)</li>
+            <li>iOS version (e.g., iOS 17.2)</li>
+            <li>App version (shown in Settings)</li>
+            <li>Steps to reproduce the issue</li>
+            <li>Screenshots if possible</li>
+        </ul>
+
+        <div class="tip-box">
+            <p><strong>Tip:</strong> Check the App Store for updates — we regularly fix bugs and add improvements!</p>
+        </div>
+
+        <h2>Refund Requests</h2>
+        <p>All in-app purchases are processed by Apple. To request a refund:</p>
+        <ol>
+            <li>Visit <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a></li>
+            <li>Sign in with your Apple ID</li>
+            <li>Find your Glowby purchase</li>
+            <li>Select "Request a refund"</li>
+        </ol>
+
+        <div class="warning-box">
+            <p><strong>Note:</strong> Refunds are at Apple's discretion. Coins spent before a refund cannot be recovered.</p>
+        </div>
+
+        <div class="footer">
+            <p>Stanisław Pawluczuk | Jednoosobowa Działalność Gospodarcza</p>
+            <p>NIP: 1231476789 | REGON: 387249521</p>
+            <p style="margin-top: 15px;">
+                <a href="index.html">Home</a> · 
+                <a href="privacy-policy.html">Privacy</a> · 
+                <a href="terms-of-service.html">Terms</a>
             </p>
         </div>
     </div>
