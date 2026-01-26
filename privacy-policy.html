@@ -4,399 +4,274 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glowby - Privacy Policy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
             line-height: 1.7;
-            color: #1a1a2e;
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            color: #e2e8f0;
+            background: #080812;
+            background-image: radial-gradient(ellipse 100% 70% at 50% 0%, rgba(139, 92, 246, 0.15) 0%, transparent 50%);
+            min-height: 100vh;
             padding: 20px;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
-            background: white;
+            background: linear-gradient(160deg, rgba(20, 15, 35, 0.95) 0%, rgba(10, 8, 20, 0.98) 100%);
             padding: 40px;
-            border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border-radius: 24px;
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            box-shadow: 0 0 60px rgba(139, 92, 246, 0.1), 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .logo-text {
+            font-family: 'Archivo Black', sans-serif;
+            font-size: 2rem;
+            background: linear-gradient(135deg, #a855f7 0%, #8b5cf6 50%, #6366f1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
         h1 {
-            color: #8b5cf6;
+            font-family: 'Archivo Black', sans-serif;
+            color: #fff;
             margin-bottom: 10px;
-            font-size: 2rem;
+            font-size: 1.8rem;
+            text-align: center;
         }
         .last-updated {
             color: #64748b;
             margin-bottom: 30px;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
+            text-align: center;
         }
         h2 {
-            color: #1a1a2e;
+            color: #a855f7;
             margin-top: 35px;
             margin-bottom: 15px;
             padding-bottom: 8px;
-            border-bottom: 2px solid #8b5cf6;
-            font-size: 1.3rem;
+            border-bottom: 1px solid rgba(139, 92, 246, 0.3);
+            font-size: 1.2rem;
+            font-weight: 600;
         }
         h3 {
-            color: #475569;
+            color: #c4b5fd;
             margin-top: 20px;
             margin-bottom: 10px;
-            font-size: 1.1rem;
+            font-size: 1rem;
+            font-weight: 600;
         }
-        p { margin-bottom: 15px; color: #334155; }
+        p { margin-bottom: 15px; color: #94a3b8; }
         ul, ol {
             margin-bottom: 15px;
             padding-left: 25px;
-            color: #334155;
+            color: #94a3b8;
         }
         li { margin-bottom: 8px; }
-        a { color: #8b5cf6; }
+        a { color: #a855f7; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        strong { color: #e2e8f0; }
         .highlight-box {
-            background: #f1f5f9;
-            border-left: 4px solid #8b5cf6;
+            background: rgba(139, 92, 246, 0.1);
+            border-left: 3px solid #8b5cf6;
             padding: 15px 20px;
             margin: 20px 0;
-            border-radius: 0 8px 8px 0;
+            border-radius: 0 12px 12px 0;
         }
+        .highlight-box p { margin-bottom: 0; }
         .warning-box {
-            background: #fef3c7;
-            border-left: 4px solid #f59e0b;
+            background: rgba(251, 191, 36, 0.1);
+            border-left: 3px solid #fbbf24;
             padding: 15px 20px;
             margin: 20px 0;
-            border-radius: 0 8px 8px 0;
+            border-radius: 0 12px 12px 0;
         }
+        .warning-box p { color: #fcd34d; margin-bottom: 0; }
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
+            font-size: 0.9rem;
         }
         th, td {
-            border: 1px solid #e2e8f0;
+            border: 1px solid rgba(139, 92, 246, 0.2);
             padding: 12px;
             text-align: left;
         }
         th {
-            background: #f8fafc;
+            background: rgba(139, 92, 246, 0.15);
+            color: #c4b5fd;
             font-weight: 600;
         }
-        .contact-box {
-            background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
-            color: white;
-            padding: 25px;
-            border-radius: 12px;
-            margin-top: 30px;
-        }
-        .contact-box a { color: #e0e7ff; }
-        .jurisdiction-note {
+        td { color: #94a3b8; }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(139, 92, 246, 0.2);
+            text-align: center;
             font-size: 0.85rem;
             color: #64748b;
-            font-style: italic;
-            margin-top: 5px;
+        }
+        .footer a { color: #8b5cf6; }
+        @media (max-width: 600px) {
+            .container { padding: 24px 20px; }
+            h1 { font-size: 1.5rem; }
+            h2 { font-size: 1.1rem; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🧠 Glowby Privacy Policy</h1>
-        <p class="last-updated">Last Updated: January 25, 2026 | Effective Date: January 25, 2026</p>
+        <div class="logo">
+            <span class="logo-text">GLOWBY</span>
+        </div>
         
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last Updated: January 25, 2026</p>
+
         <div class="highlight-box">
-            <strong>Summary:</strong> Glowby collects minimal data. We use anonymous identifiers for leaderboards and analytics. We show optional ads. We never sell your personal data. You can delete your data anytime.
+            <p><strong>Summary:</strong> Glowby is a puzzle game. We collect minimal data, don't sell your information, and comply with GDPR, COPPA, PIPA, and other privacy laws worldwide.</p>
         </div>
 
-        <h2>1. Who We Are (Data Controller)</h2>
-        <p>Glowby is operated by:</p>
-        <p>
-            <strong>Stanisław Pawluczuk</strong><br>
-            Jednoosobowa Działalność Gospodarcza (Sole Proprietorship)<br>
-            NIP: 1231476789<br>
-            REGON: 387249521<br>
-            Business Address: ul. Świeradowska 47, 02-662 Warszawa, Poland<br>
-            Email: <a href="/cdn-cgi/l/email-protection#dcbbb0b3abbea5bbbdb1b99cacb1f2b1b9"><span class="__cf_email__" data-cfemail="eb8c87849c89928c8a868eab9b86c5868e">[email&#160;protected]</span></a>
-        </p>
-        <p>As the Data Controller under GDPR and other applicable laws, we determine the purposes and means of processing your personal data.</p>
-        
-        <p class="jurisdiction-note"><strong>For users in Japan:</strong> Pursuant to the Act on Specified Commercial Transactions (特定商取引法), our full business address and telephone number will be disclosed without delay upon request. Please contact us at <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d0b7bcbfa7b2a9b7b1bdb590a0bdfebdb5">[email&#160;protected]</a>.</p>
+        <h2>1. Who We Are</h2>
+        <p><strong>Data Controller:</strong> Stanisław Pawluczuk, operating as a sole proprietorship (Jednoosobowa Działalność Gospodarcza) under Polish law.</p>
+        <p><strong>Contact:</strong> <a href="/cdn-cgi/l/email-protection#dfb8b3b0a8bda6b8beb2ba9fafb2f1b2ba"><span class="__cf_email__" data-cfemail="6e090201190c17090f030b2e1e0340030b">[email&#160;protected]</span></a></p>
+        <p><strong>Business Registration:</strong> NIP: 1231476789 | REGON: 387249521</p>
 
-        <h2>2. What Data We Collect</h2>
+        <h2>2. Information We Collect</h2>
         
-        <h3>2.1 Data We Collect Directly</h3>
+        <h3>2.1 Information You Provide</h3>
+        <ul>
+            <li><strong>Username:</strong> Optional display name for leaderboards</li>
+            <li><strong>Support Requests:</strong> Email and message content when you contact us</li>
+        </ul>
+
+        <h3>2.2 Automatically Collected Information</h3>
+        <ul>
+            <li><strong>Device Information:</strong> Device type, operating system, app version</li>
+            <li><strong>Game Data:</strong> Scores, achievements, gameplay statistics (stored locally)</li>
+            <li><strong>Analytics:</strong> Anonymous usage patterns to improve the game</li>
+        </ul>
+
+        <h3>2.3 Information from Third Parties</h3>
+        <ul>
+            <li><strong>Advertising Partners:</strong> AdMob may collect device identifiers for ad personalization (with consent)</li>
+            <li><strong>Analytics:</strong> Firebase Analytics for anonymous usage statistics</li>
+        </ul>
+
+        <h2>3. How We Use Your Information</h2>
         <table>
             <tr>
-                <th>Data Type</th>
                 <th>Purpose</th>
                 <th>Legal Basis (GDPR)</th>
             </tr>
             <tr>
-                <td>Display Name (optional)</td>
-                <td>Show on leaderboards</td>
-                <td>Consent / Contract Performance</td>
+                <td>Display leaderboard rankings</td>
+                <td>Consent / Legitimate Interest</td>
             </tr>
             <tr>
-                <td>Game Scores</td>
-                <td>Leaderboard rankings</td>
-                <td>Contract Performance</td>
-            </tr>
-            <tr>
-                <td>Game Progress</td>
-                <td>Save your achievements, skins, coins</td>
-                <td>Contract Performance</td>
-            </tr>
-            <tr>
-                <td>Language Preference</td>
-                <td>Display game in your language</td>
-                <td>Contract Performance</td>
-            </tr>
-        </table>
-
-        <h3>2.2 Data Collected Automatically</h3>
-        <table>
-            <tr>
-                <th>Data Type</th>
-                <th>Purpose</th>
-                <th>Legal Basis (GDPR)</th>
-            </tr>
-            <tr>
-                <td>Anonymous User ID</td>
-                <td>Identify your account without personal info</td>
-                <td>Legitimate Interest</td>
-            </tr>
-            <tr>
-                <td>Device Type & OS Version</td>
-                <td>Optimize game performance</td>
-                <td>Legitimate Interest</td>
-            </tr>
-            <tr>
-                <td>App Version</td>
-                <td>Troubleshooting & updates</td>
-                <td>Legitimate Interest</td>
-            </tr>
-            <tr>
-                <td>Gameplay Analytics</td>
-                <td>Improve game experience</td>
-                <td>Consent (where required)</td>
-            </tr>
-            <tr>
-                <td>Advertising ID (IDFA/AAID)</td>
-                <td>Serve relevant ads (with consent)</td>
+                <td>Show advertisements</td>
                 <td>Consent</td>
             </tr>
+            <tr>
+                <td>Improve game performance</td>
+                <td>Legitimate Interest</td>
+            </tr>
+            <tr>
+                <td>Respond to support requests</td>
+                <td>Contract Performance</td>
+            </tr>
+            <tr>
+                <td>Prevent fraud and abuse</td>
+                <td>Legitimate Interest</td>
+            </tr>
         </table>
 
-        <h3>2.3 Data We Do NOT Collect</h3>
-        <ul>
-            <li>Real name (unless you choose to use it as display name)</li>
-            <li>Email address (unless you contact support)</li>
-            <li>Phone number</li>
-            <li>Physical location / GPS data</li>
-            <li>Contacts or address book</li>
-            <li>Photos or camera access</li>
-            <li>Health or fitness data</li>
-            <li>Financial information (payments handled by Apple/Google)</li>
-        </ul>
-
-        <h2>3. Children's Privacy</h2>
-        
+        <h2>4. Children's Privacy (COPPA Compliance)</h2>
         <div class="warning-box">
-            <strong>Important:</strong> Glowby is rated 4+ and is suitable for all ages. We take children's privacy very seriously.
+            <p><strong>Important:</strong> Glowby is rated 4+ and safe for all ages. We do NOT knowingly collect personal information from children under 13.</p>
         </div>
-
-        <h3>3.1 COPPA Compliance (United States)</h3>
-        <p>The Children's Online Privacy Protection Act (COPPA) applies to children under 13. Glowby:</p>
+        <p>For users under 13:</p>
         <ul>
-            <li>Does NOT knowingly collect personal information from children under 13</li>
-            <li>Uses age-gating to identify users under 13</li>
-            <li>For users identified as under 13, we disable personalized advertising and limit data collection</li>
-            <li>Does NOT require personal information to play the game</li>
+            <li>We do not collect, use, or disclose personal information</li>
+            <li>Personalized advertising is disabled</li>
+            <li>Only contextual (non-targeted) ads are shown</li>
+            <li>No behavioral tracking occurs</li>
         </ul>
-        <p>If you believe we have inadvertently collected data from a child under 13, please contact us immediately and we will delete it.</p>
+        <p>Parents may contact us at <a href="/cdn-cgi/l/email-protection#1e797271697c67797f737b5e6e7330737b"><span class="__cf_email__" data-cfemail="d5b2b9baa2b7acb2b4b8b095a5b8fbb8b0">[email&#160;protected]</span></a> to review, delete, or refuse further collection of their child's information.</p>
 
-        <h3>3.2 GDPR-K (EU/EEA)</h3>
-        <p>For users in the EU/EEA under the age of 16 (or the applicable age in your country: 13-16 depending on member state), we:</p>
+        <h2>5. Your Rights</h2>
+        <p>Depending on your location, you may have the following rights:</p>
         <ul>
-            <li>Only serve contextual (non-personalized) advertisements</li>
-            <li>Do not collect advertising identifiers</li>
-            <li>Require parental consent for any data processing beyond core gameplay</li>
+            <li><strong>Access:</strong> Request a copy of your data</li>
+            <li><strong>Correction:</strong> Request correction of inaccurate data</li>
+            <li><strong>Deletion:</strong> Request deletion of your data ("Right to be Forgotten")</li>
+            <li><strong>Portability:</strong> Receive your data in a machine-readable format</li>
+            <li><strong>Object:</strong> Object to processing based on legitimate interests</li>
+            <li><strong>Withdraw Consent:</strong> Withdraw consent at any time</li>
         </ul>
+        <p>To exercise these rights, use the "Delete Account" feature in Settings or contact us at <a href="/cdn-cgi/l/email-protection#31565d5e46534856505c5471415c1f5c54"><span class="__cf_email__" data-cfemail="98fff4f7effae1fff9f5fdd8e8f5b6f5fd">[email&#160;protected]</span></a>. We will respond without undue delay, within 30 days.</p>
 
-        <h3>3.3 Other Jurisdictions</h3>
-        <p><strong>South Korea (PIPA):</strong> Users under 14 require parental consent for data processing.</p>
-        <p><strong>Singapore (PDPA):</strong> We follow guidelines for minors under 13, seeking parental consent where applicable.</p>
-
-        <h2>4. Third-Party Services</h2>
-        <p>Glowby uses the following third-party services. Each processes data as described below:</p>
-
-        <h3>4.1 Google Firebase</h3>
-        <p><strong>Services Used:</strong> Firebase Authentication (anonymous), Firebase Firestore (leaderboards), Firebase Analytics</p>
-        <p><strong>Role:</strong> Data Processor (acting on our instructions)</p>
-        <p><strong>Data Collected:</strong></p>
+        <h2>6. Data Retention</h2>
         <ul>
-            <li>Anonymous user identifier</li>
-            <li>Device information (model, OS version)</li>
-            <li>App usage events (game starts, achievements)</li>
-            <li>Performance data</li>
-        </ul>
-        <p><strong>Privacy Policy:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></p>
-
-        <h3>4.2 Google AdMob</h3>
-        <p><strong>Purpose:</strong> Display optional rewarded video advertisements</p>
-        <p><strong>Role:</strong> Joint Controller (for personalized advertising)</p>
-        <p><strong>Data Collected (with consent):</strong></p>
-        <ul>
-            <li>Advertising ID (IDFA on iOS, AAID on Android)</li>
-            <li>IP address (anonymized)</li>
-            <li>Device information</li>
-            <li>Ad interaction data</li>
-        </ul>
-        <p><strong>Your Control:</strong></p>
-        <ul>
-            <li>On iOS: Settings → Privacy → Tracking → disable for Glowby</li>
-            <li>On Android: Settings → Google → Ads → Opt out of personalization</li>
-            <li>Watching ads is always optional - you can play without watching any ads</li>
-        </ul>
-        <p><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
-
-        <div class="highlight-box">
-            <strong>For EU/EEA/UK Users:</strong> Before showing personalized advertisements, we will request your explicit consent through a Consent Management Platform (CMP) compliant with IAB TCF v2.0. You can withdraw consent at any time through the game settings.
-        </div>
-
-        <h3>4.3 Apple App Store / Google Play Store</h3>
-        <p>In-app purchases are processed directly by Apple or Google. We do not have access to your payment details. Please refer to their respective privacy policies:</p>
-        <ul>
-            <li><a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a></li>
-            <li><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+            <li><strong>Game Progress:</strong> Stored locally on your device until you delete the app</li>
+            <li><strong>Leaderboard Data:</strong> Retained until you request deletion</li>
+            <li><strong>Support Requests:</strong> Retained for 2 years for quality assurance</li>
+            <li><strong>Analytics:</strong> Aggregated data retained for 14 months</li>
         </ul>
 
-        <h2>5. International Data Transfers</h2>
-        <p>Your data may be transferred to and processed in the United States by Google LLC (Firebase, AdMob). These transfers are protected by:</p>
+        <h2>7. International Data Transfers</h2>
+        <p>Your data may be transferred to and processed in countries outside your residence, including the United States (Firebase/Google services). We ensure appropriate safeguards through:</p>
         <ul>
-            <li><strong>EU-US Data Privacy Framework (DPF)</strong> - Google is a certified participant</li>
-            <li><strong>Standard Contractual Clauses (SCCs)</strong> - approved by the European Commission</li>
-            <li><strong>Google's Data Processing Addendum</strong> - which we have accepted</li>
+            <li>EU Standard Contractual Clauses</li>
+            <li>Data Processing Agreements with all service providers</li>
         </ul>
-        <p>For Japanese users: Cross-border data transfers comply with the Act on the Protection of Personal Information (APPI) through contractual safeguards with our processors.</p>
 
-        <h2>6. Your Rights</h2>
-        
-        <h3>6.1 Rights Under GDPR (EU/EEA/UK)</h3>
-        <p>You have the following rights regarding your personal data:</p>
+        <h2>8. Third-Party Services</h2>
         <table>
             <tr>
-                <th>Right</th>
-                <th>Description</th>
+                <th>Service</th>
+                <th>Purpose</th>
+                <th>Privacy Policy</th>
             </tr>
             <tr>
-                <td><strong>Access</strong></td>
-                <td>Request a copy of your data</td>
+                <td>Google AdMob</td>
+                <td>Advertising</td>
+                <td><a href="https://policies.google.com/privacy" target="_blank">Link</a></td>
             </tr>
             <tr>
-                <td><strong>Rectification</strong></td>
-                <td>Correct inaccurate data</td>
+                <td>Firebase Analytics</td>
+                <td>Analytics</td>
+                <td><a href="https://firebase.google.com/support/privacy" target="_blank">Link</a></td>
             </tr>
             <tr>
-                <td><strong>Erasure ("Right to be Forgotten")</strong></td>
-                <td>Delete your data</td>
-            </tr>
-            <tr>
-                <td><strong>Restriction</strong></td>
-                <td>Limit how we process your data</td>
-            </tr>
-            <tr>
-                <td><strong>Portability</strong></td>
-                <td>Receive your data in a portable format</td>
-            </tr>
-            <tr>
-                <td><strong>Object</strong></td>
-                <td>Object to processing based on legitimate interest</td>
-            </tr>
-            <tr>
-                <td><strong>Withdraw Consent</strong></td>
-                <td>Withdraw consent at any time (without affecting lawfulness of prior processing)</td>
-            </tr>
-            <tr>
-                <td><strong>Automated Decision-Making</strong></td>
-                <td>Not be subject to solely automated decisions with legal effects</td>
+                <td>Apple App Store</td>
+                <td>Distribution, IAP</td>
+                <td><a href="https://www.apple.com/legal/privacy/" target="_blank">Link</a></td>
             </tr>
         </table>
 
-        <h3>6.2 How to Exercise Your Rights</h3>
-        <p><strong>Delete Your Data:</strong> Use the "Delete Account" button in Settings within the game. This immediately deletes your leaderboard entries and resets your local data.</p>
-        <p><strong>Other Requests:</strong> Email us at <a href="/cdn-cgi/l/email-protection#99fef5f6eefbe0fef8f4fcd9e9f4b7f4fc"><span class="__cf_email__" data-cfemail="ee898281998c97898f838bae9e83c0838b">[email&#160;protected]</span></a>. We will respond without undue delay and in any event within 30 days (or sooner as required by law).</p>
-
-        <h3>6.3 Supervisory Authority</h3>
-        <p>If you believe we have not adequately addressed your concerns, you have the right to lodge a complaint with your local data protection authority:</p>
-        <p><strong>Poland:</strong> Urząd Ochrony Danych Osobowych (UODO)<br>
-        ul. Stawki 2, 00-193 Warszawa<br>
-        Email: <a href="/cdn-cgi/l/email-protection#aac1cbc4c9cfc6cbd8c3cbeadfc5cec584cdc5dc84dac6"><span class="__cf_email__" data-cfemail="503b313e33353c3122393110253f343f7e373f267e203c">[email&#160;protected]</span></a><br>
-        Website: <a href="https://uodo.gov.pl" target="_blank">uodo.gov.pl</a></p>
-
-        <h3>6.4 Rights in Other Jurisdictions</h3>
-        <p><strong>California (CCPA/CPRA):</strong> California residents have the right to know what data we collect, request deletion, and opt-out of the "sale" or "sharing" of personal information. We do not sell personal information. To opt-out of sharing for advertising purposes, adjust your device's ad tracking settings.</p>
-        
-        <p><strong>Japan (APPI):</strong> You have the right to request disclosure, correction, deletion, or cessation of use of your personal information. Contact us at the email above.</p>
-        
-        <p><strong>South Korea (PIPA):</strong> You have rights to access, correct, delete, and suspend processing of your personal information. We process data in accordance with PIPA requirements including separate consent mechanisms.</p>
-
-        <h2>7. Data Retention</h2>
-        <table>
-            <tr>
-                <th>Data Type</th>
-                <th>Retention Period</th>
-            </tr>
-            <tr>
-                <td>Leaderboard Scores</td>
-                <td>Until you request deletion or delete your account</td>
-            </tr>
-            <tr>
-                <td>Analytics Data</td>
-                <td>14 months (Firebase default), then automatically deleted</td>
-            </tr>
-            <tr>
-                <td>Local Game Progress</td>
-                <td>Until you uninstall the app or reset data</td>
-            </tr>
-            <tr>
-                <td>Support Correspondence</td>
-                <td>3 years (for legal compliance), then deleted</td>
-            </tr>
-        </table>
-
-        <h2>8. Data Security</h2>
-        <p>We implement appropriate technical and organizational measures to protect your data:</p>
+        <h2>9. Security</h2>
+        <p>We implement appropriate technical and organizational measures to protect your data, including:</p>
         <ul>
-            <li>All data transmitted over HTTPS/TLS encryption</li>
-            <li>Firebase security rules restrict data access</li>
-            <li>Anonymous authentication - no passwords to breach</li>
+            <li>Encryption in transit (HTTPS/TLS)</li>
+            <li>Secure cloud infrastructure (Firebase)</li>
+            <li>Regular security reviews</li>
             <li>Minimal data collection principle</li>
-            <li>Regular security reviews of our implementation</li>
         </ul>
 
-        <h2>9. Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. We will notify you of significant changes by:</p>
-        <ul>
-            <li>Posting a notice in the game</li>
-            <li>Updating the "Last Updated" date above</li>
-            <li>For material changes affecting your rights, requesting renewed consent where required</li>
-        </ul>
+        <h2>10. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of significant changes through the app or by updating the "Last Updated" date. Continued use after changes constitutes acceptance.</p>
 
-        <h2>10. Jurisdiction-Specific Provisions</h2>
-        
-        <h3>For Users in the European Union/EEA</h3>
-        <p>This policy complies with the General Data Protection Regulation (EU) 2016/679. The legal bases for processing are specified in Section 2. You have all rights listed in Section 6.1.</p>
-        
-        <h3>For Users in Japan</h3>
-        <p>This policy complies with the Act on the Protection of Personal Information (個人情報保護法). Data shared with advertising partners constitutes "Third Party Provision" for which we obtain consent through our CMP.</p>
-        
-        <h3>For Users in South Korea</h3>
-        <p>This policy complies with the Personal Information Protection Act (개인정보보호법). We obtain separate consent for: (1) collection and use of personal information, (2) provision to third parties, and (3) marketing communications.</p>
-        
-        <h3>For Users in Taiwan</h3>
-        <p>This policy complies with the Personal Data Protection Act (個人資料保護法). You have rights to access, correct, and delete your personal data.</p>
-
-        <div class="contact-box">
-            <h2 style="color: white; border: none; margin-top: 0;">11. Contact Us</h2>
-            <p>For privacy inquiries, data requests, or complaints:</p>
-            <p>
-                <strong>Email:</strong> <a href="/cdn-cgi/l/em
+        <h2>11. Contact Us</h2>
+        <p>For privacy-related questions or to exercise your rights:</p>
+        <div class="highlight-box">
+            <p><strong>Email:</strong> <a href="/cdn-cgi/l/email-protection#baddd6d5cdd8c3dddbd7dffacad794d7df"><span class="__cf_email__" data-cfemail="20474c4f57425947414d4560504d0e4d45">[email&#160;protected]</span></a></p>
+            <p><str

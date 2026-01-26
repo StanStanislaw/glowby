@@ -4,430 +4,217 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glowby - Terms of Service</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
             line-height: 1.7;
-            color: #1a1a2e;
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            color: #e2e8f0;
+            background: #080812;
+            background-image: radial-gradient(ellipse 100% 70% at 50% 0%, rgba(139, 92, 246, 0.15) 0%, transparent 50%);
+            min-height: 100vh;
             padding: 20px;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
-            background: white;
+            background: linear-gradient(160deg, rgba(20, 15, 35, 0.95) 0%, rgba(10, 8, 20, 0.98) 100%);
             padding: 40px;
-            border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border-radius: 24px;
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            box-shadow: 0 0 60px rgba(139, 92, 246, 0.1), 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+        .logo { text-align: center; margin-bottom: 30px; }
+        .logo-text {
+            font-family: 'Archivo Black', sans-serif;
+            font-size: 2rem;
+            background: linear-gradient(135deg, #a855f7 0%, #8b5cf6 50%, #6366f1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
         h1 {
-            color: #8b5cf6;
+            font-family: 'Archivo Black', sans-serif;
+            color: #fff;
             margin-bottom: 10px;
-            font-size: 2rem;
+            font-size: 1.8rem;
+            text-align: center;
         }
         .last-updated {
             color: #64748b;
             margin-bottom: 30px;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
+            text-align: center;
         }
         h2 {
-            color: #1a1a2e;
+            color: #a855f7;
             margin-top: 35px;
             margin-bottom: 15px;
             padding-bottom: 8px;
-            border-bottom: 2px solid #8b5cf6;
-            font-size: 1.3rem;
-        }
-        h3 {
-            color: #475569;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-size: 1.1rem;
-        }
-        p { margin-bottom: 15px; color: #334155; }
-        ul, ol {
-            margin-bottom: 15px;
-            padding-left: 25px;
-            color: #334155;
-        }
-        li { margin-bottom: 8px; }
-        a { color: #8b5cf6; }
-        .highlight-box {
-            background: #f1f5f9;
-            border-left: 4px solid #8b5cf6;
-            padding: 15px 20px;
-            margin: 20px 0;
-            border-radius: 0 8px 8px 0;
-        }
-        .warning-box {
-            background: #fef3c7;
-            border-left: 4px solid #f59e0b;
-            padding: 15px 20px;
-            margin: 20px 0;
-            border-radius: 0 8px 8px 0;
-        }
-        .legal-box {
-            background: #fee2e2;
-            border-left: 4px solid #ef4444;
-            padding: 15px 20px;
-            margin: 20px 0;
-            border-radius: 0 8px 8px 0;
-        }
-        .jurisdiction-box {
-            background: #dbeafe;
-            border-left: 4px solid #3b82f6;
-            padding: 15px 20px;
-            margin: 20px 0;
-            border-radius: 0 8px 8px 0;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        th, td {
-            border: 1px solid #e2e8f0;
-            padding: 12px;
-            text-align: left;
-        }
-        th {
-            background: #f8fafc;
+            border-bottom: 1px solid rgba(139, 92, 246, 0.3);
+            font-size: 1.2rem;
             font-weight: 600;
         }
-        .contact-box {
-            background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
-            color: white;
-            padding: 25px;
-            border-radius: 12px;
-            margin-top: 30px;
+        h3 {
+            color: #c4b5fd;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1rem;
+            font-weight: 600;
         }
-        .contact-box a { color: #e0e7ff; }
+        p { margin-bottom: 15px; color: #94a3b8; }
+        ul, ol { margin-bottom: 15px; padding-left: 25px; color: #94a3b8; }
+        li { margin-bottom: 8px; }
+        a { color: #a855f7; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        strong { color: #e2e8f0; }
+        .highlight-box {
+            background: rgba(139, 92, 246, 0.1);
+            border-left: 3px solid #8b5cf6;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 12px 12px 0;
+        }
+        .highlight-box p { margin-bottom: 0; }
+        .warning-box {
+            background: rgba(251, 191, 36, 0.1);
+            border-left: 3px solid #fbbf24;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 12px 12px 0;
+        }
+        .warning-box p { color: #fcd34d; margin-bottom: 0; }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(139, 92, 246, 0.2);
+            text-align: center;
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+        .footer a { color: #8b5cf6; }
+        @media (max-width: 600px) {
+            .container { padding: 24px 20px; }
+            h1 { font-size: 1.5rem; }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🧠 Glowby Terms of Service</h1>
-        <p class="last-updated">Last Updated: January 25, 2026 | Effective Date: January 25, 2026</p>
+        <div class="logo"><span class="logo-text">GLOWBY</span></div>
         
+        <h1>Terms of Service</h1>
+        <p class="last-updated">Last Updated: January 25, 2026</p>
+
         <div class="highlight-box">
-            <strong>Summary:</strong> By using Glowby, you agree to these terms. The game is free to play with optional purchases. In-game currency has no real-world value. You own nothing in the game - we grant you a license to play. Be nice on leaderboards. Don't copy, reverse engineer, or use our content for AI training.
+            <p><strong>Summary:</strong> Play fair, have fun, respect others. Virtual items are non-refundable. We're not liable for things outside our control.</p>
         </div>
 
-        <h2>1. Agreement to Terms</h2>
-        <p>These Terms of Service ("Terms") constitute a legally binding agreement between you ("User," "you," or "your") and:</p>
-        <p>
-            <strong>Stanisław Pawluczuk</strong><br>
-            Trading as: Glowby<br>
-            Jednoosobowa Działalność Gospodarcza (Sole Proprietorship)<br>
-            NIP: 1231476789<br>
-            REGON: 387249521<br>
-            Business Address: ul. Świeradowska 47, 02-662 Warszawa, Poland<br>
-            Email: <a href="/cdn-cgi/l/email-protection#fc9b90938b9e859b9d9199bc8c91d29199"><span class="__cf_email__" data-cfemail="dcbbb0b3abbea5bbbdb1b99cacb1f2b1b9">[email&#160;protected]</span></a>
-        </p>
-        <p>("Developer," "we," "us," or "our") regarding your use of the Glowby mobile application ("Game" or "Service").</p>
-        
-        <p><strong>By downloading, installing, or using Glowby, you confirm that you have read, understood, and agree to be bound by these Terms.</strong> If you do not agree, do not use the Game.</p>
+        <h2>1. Acceptance of Terms</h2>
+        <p>By downloading, installing, or playing Glowby ("the Game"), you agree to these Terms of Service. If you disagree with any part, please do not use the Game.</p>
 
-        <h2>2. Eligibility and Age Requirements</h2>
-        <p>Glowby is rated 4+ and is suitable for all ages. However:</p>
+        <h2>2. About the Service</h2>
+        <p>Glowby is a mobile puzzle game developed by Stanisław Pawluczuk, operating as a sole proprietorship under Polish law. The Game combines elements of Tetris and 2048 in a unique, timed puzzle experience.</p>
+
+        <h2>3. Age Requirements</h2>
         <ul>
-            <li>Users under 13 years of age (or the applicable age of digital consent in your jurisdiction) may use the Game with parental/guardian consent</li>
-            <li>Users under 18 may not make In-App Purchases without parental/guardian permission</li>
-            <li>By making a purchase, you represent that you are at least 18 years old or have parental consent</li>
+            <li>Glowby is rated 4+ and suitable for all ages</li>
+            <li>Users under 13 require parental consent</li>
+            <li>Parents are responsible for monitoring children's use</li>
+            <li>We comply with COPPA (USA) and equivalent international regulations</li>
         </ul>
 
-        <h2>3. License Grant</h2>
-        
-        <div class="legal-box">
-            <strong>Important:</strong> You do not own Glowby or any content within it. We grant you a limited license to use it.
-        </div>
-
-        <h3>3.1 License Terms</h3>
-        <p>Subject to your compliance with these Terms, we grant you a:</p>
+        <h2>4. User Accounts</h2>
+        <h3>4.1 Account Creation</h3>
         <ul>
-            <li><strong>Limited</strong> - restricted to personal, non-commercial use</li>
-            <li><strong>Non-exclusive</strong> - we may grant the same license to others</li>
-            <li><strong>Non-transferable</strong> - you cannot give or sell this license to anyone</li>
-            <li><strong>Revocable</strong> - we may terminate this license as described in Section 14</li>
-        </ul>
-        <p>license to download, install, and use the Game on a compatible device that you own or control, solely for your personal, non-commercial entertainment purposes.</p>
-
-        <h3>3.2 License Restrictions</h3>
-        <p>You agree NOT to:</p>
-        <ul>
-            <li>Copy, modify, adapt, translate, or create derivative works of the Game</li>
-            <li>Reverse engineer, decompile, disassemble, or attempt to derive the source code of the Game, except to the extent that such restriction is expressly prohibited by applicable mandatory law (such as EU Directive 2009/24/EC for interoperability purposes only)</li>
-            <li>Remove, alter, or obscure any copyright, trademark, or other proprietary notices</li>
-            <li>Use the Game for any commercial purpose without our written consent</li>
-            <li>Distribute, sublicense, lease, rent, or lend the Game to any third party</li>
-            <li>Use cheats, exploits, automation software, bots, hacks, or any unauthorized third-party software</li>
-            <li>Interfere with or disrupt the Game's servers or networks</li>
-            <li>Attempt to gain unauthorized access to any accounts, systems, or networks</li>
+            <li>Accounts are optional but required for leaderboard participation</li>
+            <li>You may create one account per person</li>
+            <li>Usernames must not be offensive, impersonate others, or violate trademarks</li>
         </ul>
 
-        <h2>4. Intellectual Property Rights</h2>
-        
-        <h3>4.1 Our Ownership</h3>
-        <p>The Game and all content, features, and functionality (including but not limited to the "Glowby" character, all visual designs, graphics, animations, sounds, music, text, and code) are owned by the Developer and are protected by international copyright, trademark, patent, trade secret, and other intellectual property laws.</p>
-        
-        <p><strong>© 2026 Stanisław Pawluczuk. All rights reserved.</strong></p>
+        <h3>4.2 Account Security</h3>
+        <p>You are responsible for maintaining the security of your account. We are not liable for unauthorized access resulting from your failure to protect your credentials.</p>
 
-        <h3>4.2 Trademarks</h3>
-        <p>"Glowby," the Glowby logo, and the Glowby character are trademarks of Stanisław Pawluczuk. You may not use these marks without our prior written permission.</p>
-
-        <h3>4.3 Prohibition on AI Training and Data Mining</h3>
-        
-        <div class="legal-box">
-            <strong>IMPORTANT - AI TRAINING PROHIBITED:</strong> You represent and warrant that you will NOT use the Service, including any audio-visual elements, graphics, character designs, animations, sounds, text, code, or User Content, to train, calibrate, validate, or improve any Artificial Intelligence (AI), Machine Learning (ML), Large Language Model (LLM), or similar automated systems.
-        </div>
-        
-        <p>This prohibition includes, but is not limited to:</p>
+        <h2>5. Virtual Currency and Purchases</h2>
+        <h3>5.1 In-Game Currency</h3>
         <ul>
-            <li>Using web scrapers, bots, crawlers, or automated data extraction tools to harvest content from the Game</li>
-            <li>Feeding Game content into generative AI systems (such as image generators, text generators, or code generators)</li>
-            <li>Creating datasets derived from Game content for machine learning purposes</li>
-            <li>Using Game screenshots, recordings, or assets as training data</li>
-        </ul>
-        <p><strong>Any violation of this clause constitutes a material breach of this Agreement and willful infringement of our intellectual property rights, subjecting you to legal action and damages.</strong></p>
-
-        <h3>4.4 Anti-Cloning</h3>
-        <p>You agree not to create, publish, distribute, or assist in creating any game, application, or content that substantially copies, imitates, or reproduces the Game's mechanics, design, visual style, characters, or gameplay elements in a manner that would cause confusion or dilute our brand.</p>
-
-        <h2>5. In-App Purchases and Virtual Currency</h2>
-
-        <h3>5.1 Nature of Virtual Currency</h3>
-        <p>The Game may offer virtual currency ("Coins," "Gems," or similar items) that can be earned through gameplay or purchased with real money. You acknowledge and agree that:</p>
-        <ul>
-            <li>Virtual currency has <strong>no real-world monetary value</strong></li>
-            <li>Virtual currency <strong>cannot be exchanged, refunded, or redeemed</strong> for real money, goods, or services</li>
-            <li>Virtual currency is <strong>non-transferable</strong> between users or accounts</li>
-            <li>Virtual currency is <strong>licensed, not sold</strong> to you</li>
-            <li>We may modify, regulate, or remove virtual currency at any time</li>
-            <li>Upon termination of your account or license, all virtual currency is forfeited without refund</li>
+            <li>Coins can be earned through gameplay or purchased</li>
+            <li>Coins have no real-world monetary value</li>
+            <li>Coins cannot be exchanged, transferred, or refunded</li>
         </ul>
 
         <h3>5.2 In-App Purchases</h3>
-        <p>All purchases are processed through the Apple App Store or Google Play Store. By making a purchase, you agree to their respective terms of service. We do not have access to your payment information.</p>
-        <p>Prices are displayed in your local currency and may vary by region. Prices may change at any time without notice.</p>
-
-        <h3>5.3 Refunds</h3>
-        <p>Due to the nature of digital content, refund policies are governed by the respective platform (Apple or Google) and applicable law. See Section 12 for jurisdiction-specific refund rights.</p>
-
-        <div class="jurisdiction-box">
-            <h3>5.4 Special Provision for Users in Japan (日本のユーザー向け)</h3>
-            <p>Pursuant to the Payment Services Act (資金決済法), paid virtual currency (currency purchased with real money, not earned through gameplay) shall be valid for a period of <strong>180 days</strong> from the date of purchase. Any paid virtual currency not used within this period shall expire and be removed from your account without compensation.</p>
-            <p>"Free" virtual currency earned through gameplay or watching advertisements does not expire.</p>
-            <p>This expiration policy is displayed on the purchase screen before each transaction.</p>
-        </div>
-
-        <h2>6. User Content and Conduct</h2>
-
-        <h3>6.1 Display Names</h3>
-        <p>If you choose to set a display name for leaderboards, you are solely responsible for its content. Your display name must NOT:</p>
         <ul>
-            <li>Impersonate any person or entity</li>
-            <li>Contain profanity, obscenity, or vulgar language</li>
-            <li>Contain hate speech, discriminatory content, or slurs</li>
-            <li>Infringe on any third party's intellectual property rights</li>
-            <li>Contain personal information (emails, phone numbers, addresses)</li>
-            <li>Promote illegal activities</li>
-            <li>Contain advertising or spam</li>
-        </ul>
-        <p>We reserve the right to modify, reject, or remove any display name that violates these guidelines without notice.</p>
-
-        <h3>6.2 License to User Content</h3>
-        <p>By submitting any content to the Game (including display names and scores), you grant us a worldwide, royalty-free, perpetual, irrevocable, non-exclusive license to use, reproduce, modify, adapt, publish, translate, and display such content for the purpose of operating and improving the Game.</p>
-
-        <h3>6.3 Reporting</h3>
-        <p>If you encounter inappropriate content or user conduct, please report it to <a href="/cdn-cgi/l/email-protection#53343f3c24312a34323e3613233e7d3e36"><span class="__cf_email__" data-cfemail="eb8c87849c89928c8a868eab9b86c5868e">[email&#160;protected]</span></a>. We will investigate and take appropriate action.</p>
-
-        <h2>7. Advertisements</h2>
-        <p>The Game may display advertisements provided by third-party ad networks (including Google AdMob). By using the Game, you acknowledge that:</p>
-        <ul>
-            <li>Advertisements are provided by third parties and we do not endorse their content</li>
-            <li>Watching advertisements is always optional - you can play without watching ads</li>
-            <li>Rewarded advertisements offer in-game benefits in exchange for viewing</li>
-            <li>Ad personalization is subject to your consent (see our Privacy Policy)</li>
+            <li>All purchases are final and non-refundable</li>
+            <li>Prices are displayed in your local currency</li>
+            <li>Purchases are processed through Apple App Store</li>
+            <li>Refund requests must be directed to Apple</li>
         </ul>
 
-        <h2>8. Disclaimer of Warranties</h2>
-        
         <div class="warning-box">
-            <p><strong>THE GAME IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED.</strong></p>
-        </div>
-        
-        <p>To the maximum extent permitted by applicable law, we disclaim all warranties, including but not limited to:</p>
-        <ul>
-            <li>Implied warranties of merchantability, fitness for a particular purpose, and non-infringement</li>
-            <li>That the Game will be uninterrupted, timely, secure, or error-free</li>
-            <li>That defects will be corrected</li>
-            <li>That the Game is free of viruses or harmful components</li>
-        </ul>
-        
-        <p><strong>For EU/EEA Users:</strong> Nothing in these Terms affects your statutory rights as a consumer under EU law, including your rights under the Consumer Rights Directive and the Digital Content Directive.</p>
-
-        <h2>9. Limitation of Liability</h2>
-        
-        <h3>9.1 General Limitation</h3>
-        <p>To the maximum extent permitted by applicable law, in no event shall the Developer be liable for:</p>
-        <ul>
-            <li>Any indirect, incidental, special, consequential, or punitive damages</li>
-            <li>Any loss of profits, revenue, data, or business opportunities</li>
-            <li>Any damages arising from your use or inability to use the Game</li>
-            <li>Any content or conduct of third parties</li>
-        </ul>
-
-        <h3>9.2 Liability Cap</h3>
-        <p>Our total liability to you for all claims arising from or related to the Game shall not exceed the greater of:</p>
-        <ul>
-            <li>The amounts you have paid to us in the twelve (12) months preceding the claim, OR</li>
-            <li>Fifty Euros (€50)</li>
-        </ul>
-
-        <h3>9.3 Exclusions</h3>
-        <p>Nothing in these Terms excludes or limits our liability for:</p>
-        <ul>
-            <li>Death or personal injury caused by our negligence</li>
-            <li>Fraud or fraudulent misrepresentation</li>
-            <li>Gross negligence or intentional misconduct</li>
-            <li>Any other liability that cannot be excluded by law</li>
-        </ul>
-
-        <h3>9.4 EU Consumer Rights</h3>
-        <p><strong>For EU/EEA Users:</strong> These limitations do not affect your mandatory statutory rights under EU consumer protection law. You retain all rights granted by the Consumer Rights Directive (2011/83/EU) and the Unfair Contract Terms Directive (93/13/EEC).</p>
-
-        <h2>10. Indemnification</h2>
-        <p>You agree to indemnify, defend, and hold harmless the Developer from and against any claims, liabilities, damages, losses, and expenses (including reasonable attorneys' fees) arising out of or related to:</p>
-        <ul>
-            <li>Your use of the Game</li>
-            <li>Your violation of these Terms</li>
-            <li>Your violation of any third party's rights</li>
-            <li>Your User Content</li>
-        </ul>
-        <p><strong>For EU/EEA Users:</strong> This indemnification clause applies only to the extent that you have acted with intent or gross negligence.</p>
-
-        <h2>11. Dispute Resolution</h2>
-
-        <h3>11.1 Informal Resolution</h3>
-        <p>Before initiating any formal dispute resolution, you agree to contact us at <a href="/cdn-cgi/l/email-protection#fc9b90938b9e859b9d9199bc8c91d29199"><span class="__cf_email__" data-cfemail="395e55564e5b405e58545c79495417545c">[email&#160;protected]</span></a> and attempt to resolve the dispute informally for at least 30 days.</p>
-
-        <h3>11.2 For Users in the European Union/EEA</h3>
-        <p>If you are a consumer residing in the EU/EEA, you may bring proceedings in the courts of your country of residence. Mandatory consumer protection laws of your country of residence will apply.</p>
-        <p><strong>Online Dispute Resolution:</strong> The European Commission provides an Online Dispute Resolution (ODR) platform at <a href="https://ec.europa.eu/consumers/odr" target="_blank">https://ec.europa.eu/consumers/odr</a>.</p>
-
-        <h3>11.3 For Users Outside the EU/EEA</h3>
-        <p>Any disputes arising from these Terms or the Game shall be resolved through binding arbitration in accordance with the rules of the Court of Arbitration at the Polish Chamber of Commerce in Warsaw, Poland. The arbitration shall be conducted in English.</p>
-        <p><strong>Class Action Waiver:</strong> You agree to resolve disputes with us on an individual basis only, and not as part of any class, consolidated, or representative action.</p>
-        <p><strong>Small Claims Exception:</strong> Either party may bring an individual action in small claims court if the claim qualifies.</p>
-
-        <h3>11.4 Governing Law</h3>
-        <p>These Terms are governed by the laws of Poland, without regard to conflict of law principles. For EU consumers, this does not deprive you of the protection afforded by mandatory provisions of your country of residence.</p>
-
-        <h2>12. Jurisdiction-Specific Terms</h2>
-
-        <div class="jurisdiction-box">
-            <h3>12.1 European Union / EEA</h3>
-            <p><strong>Right of Withdrawal:</strong> Under the Consumer Rights Directive, you generally have 14 days to withdraw from a distance contract. However, for digital content not supplied on a tangible medium, you acknowledge that:</p>
-            <ul>
-                <li>By purchasing and immediately receiving digital content (such as virtual currency or items), you expressly consent to the immediate performance of the contract</li>
-                <li>You acknowledge that you thereby lose your right of withdrawal once the content is delivered</li>
-            </ul>
-            <p>This consent is obtained through the purchase flow in the Game.</p>
+            <p><strong>Japan Users (資金決済法):</strong> Paid coins are valid for 180 days from purchase date. Unused paid coins will expire after this period.</p>
         </div>
 
-        <div class="jurisdiction-box">
-            <h3>12.2 Germany (Deutschland)</h3>
-            <p>For German users, a separate Impressum (Legal Notice) is available in the Game settings, compliant with Section 5 of the German Telemedia Act (Telemediengesetz, TMG).</p>
-        </div>
-
-        <div class="jurisdiction-box">
-            <h3>12.3 Japan (日本)</h3>
-            <p>For users in Japan, a Commercial Disclosure page (特定商取引法に基づく表記) is available in the Game settings, compliant with the Act on Specified Commercial Transactions.</p>
-            <p>As noted in Section 5.4, paid virtual currency expires 180 days from purchase pursuant to the Payment Services Act.</p>
-        </div>
-
-        <div class="jurisdiction-box">
-            <h3>12.4 South Korea (대한민국)</h3>
-            <p>Pursuant to the Act on Consumer Protection in Electronic Commerce:</p>
-            <ul>
-                <li>You have a 7-day right of withdrawal for purchases unless the digital content has been used</li>
-                <li>By purchasing digital content that is applied immediately to your account, you acknowledge that the content is "used" and refund rights are restricted</li>
-                <li>This notice is displayed at the point of purchase</li>
-            </ul>
-            <p>Pursuant to PIPA, separate consent is obtained for: (1) Terms of Service, (2) Privacy Policy, and (3) Marketing communications.</p>
-        </div>
-
-        <div class="jurisdiction-box">
-            <h3>12.5 Taiwan (台灣)</h3>
-            <p>Pursuant to Article 19 of the Consumer Protection Act:</p>
-            <ul>
-                <li>You generally have a 7-day right of rescission for online purchases</li>
-                <li>For digital content not supplied on a tangible medium, by consenting to immediate provision, you acknowledge that this right does not apply</li>
-            </ul>
-            <p>We will provide at least 30 days' notice before any service termination.</p>
-        </div>
-
-        <h2>13. Service Modifications and Termination</h2>
-
-        <h3>13.1 Changes to the Game</h3>
-        <p>We reserve the right to modify, update, suspend, or discontinue the Game (or any part thereof) at any time. We will endeavor to provide reasonable notice for significant changes.</p>
-
-        <h3>13.2 Termination by You</h3>
-        <p>You may terminate this agreement at any time by uninstalling the Game and deleting your account through the in-game settings.</p>
-
-        <h3>13.3 Termination by Us</h3>
-        <p>We may terminate or suspend your access to the Game immediately, without prior notice, if:</p>
+        <h2>6. Acceptable Use</h2>
+        <p>You agree NOT to:</p>
         <ul>
-            <li>You breach any provision of these Terms</li>
-            <li>You engage in fraudulent or illegal activity</li>
-            <li>We are required to do so by law</li>
-            <li>We discontinue the Game</li>
+            <li>Cheat, hack, or exploit bugs for unfair advantage</li>
+            <li>Use automated systems (bots, scripts) to play</li>
+            <li>Reverse engineer, decompile, or modify the Game</li>
+            <li>Share exploits publicly instead of reporting them</li>
+            <li>Harass, threaten, or abuse other players</li>
+            <li>Submit false or fraudulent refund claims</li>
+            <li>Violate any applicable laws or regulations</li>
         </ul>
 
-        <h3>13.4 Effect of Termination</h3>
-        <p>Upon termination:</p>
+        <h2>7. Intellectual Property</h2>
+        <p>All content in Glowby—including but not limited to graphics, music, code, and game mechanics—is owned by Stanisław Pawluczuk or licensed to us. You may not copy, modify, distribute, or create derivative works without written permission.</p>
+
+        <h2>8. User Content</h2>
+        <p>By submitting usernames or other content, you grant us a non-exclusive, worldwide, royalty-free license to use, display, and distribute that content within the Game's services (e.g., leaderboards).</p>
+
+        <h2>9. Termination</h2>
+        <p>We may suspend or terminate your access if you:</p>
         <ul>
-            <li>Your license to use the Game is revoked</li>
-            <li>You lose access to all virtual currency and items without refund</li>
-            <li>Your leaderboard entries may be removed</li>
-            <li>Sections 4 (Intellectual Property), 8 (Disclaimers), 9 (Limitation of Liability), 10 (Indemnification), and 11 (Dispute Resolution) survive termination</li>
+            <li>Violate these Terms</li>
+            <li>Engage in cheating or fraudulent behavior</li>
+            <li>Abuse other users or our systems</li>
+        </ul>
+        <p>Upon termination, you lose access to your account, progress, and any purchased items. No refunds will be provided.</p>
+
+        <h2>10. Disclaimers</h2>
+        <p>THE GAME IS PROVIDED "AS IS" WITHOUT WARRANTIES OF ANY KIND. We do not guarantee:</p>
+        <ul>
+            <li>Uninterrupted or error-free service</li>
+            <li>Compatibility with all devices</li>
+            <li>Preservation of game progress in all circumstances</li>
         </ul>
 
-        <h3>13.5 Service Discontinuation Notice</h3>
-        <p>If we permanently discontinue the Game, we will provide at least 30 days' advance notice where practicable.</p>
-
-        <h2>14. Changes to These Terms</h2>
-        <p>We may update these Terms from time to time. We will notify you of material changes by:</p>
+        <h2>11. Limitation of Liability</h2>
+        <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, we are not liable for:</p>
         <ul>
-            <li>Posting a notice in the Game</li>
-            <li>Updating the "Last Updated" date</li>
-            <li>For material changes, requiring you to accept the new terms before continuing to use the Game</li>
+            <li>Indirect, incidental, or consequential damages</li>
+            <li>Loss of data, profits, or goodwill</li>
+            <li>Damages exceeding amounts you've paid us in the past 12 months</li>
         </ul>
-        <p>Your continued use of the Game after changes become effective constitutes acceptance of the modified Terms.</p>
 
-        <h2>15. General Provisions</h2>
+        <h2>12. Governing Law</h2>
+        <p>These Terms are governed by the laws of Poland. For EU consumers, mandatory consumer protection laws of your country of residence also apply. Disputes shall be resolved in the courts of Poland, unless you're entitled to your local courts under consumer protection laws.</p>
 
-        <h3>15.1 Entire Agreement</h3>
-        <p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and the Developer regarding the Game.</p>
+        <h2>13. Changes to Terms</h2>
+        <p>We may modify these Terms at any time. Continued use after changes constitutes acceptance. Material changes will be notified through the app.</p>
 
-        <h3>15.2 Severability</h3>
-        <p>If any provision of these Terms is found to be unenforceable, that provision shall be modified to the minimum extent necessary to make it enforceable, or if modification is not possible, shall be severed. The remaining provisions shall continue in full force and effect.</p>
+        <h2>14. Contact</h2>
+        <div class="highlight-box">
+            <p><strong>Email:</strong> <a href="/cdn-cgi/l/email-protection#781f14170f1a011f19151d38081556151d"><span class="__cf_email__" data-cfemail="bed9d2d1c9dcc7d9dfd3dbfeced390d3db">[email&#160;protected]</span></a></p>
+        </div>
 
-        <h3>15.3 Waiver</h3>
-        <p>Our failure to enforce any right or provision of these Terms shall not constitute a waiver of such right or provision.</p>
-
-        <h3>15.4 Assignment</h3>
-        <p>You may not assign or transfer these Terms without our prior written consent. We may assign our rights and obligations under these Terms without restriction.</p>
-
-        <h3>15.5 Language</h3>
-        <p>These Terms are provided in English. Translations may be provided for convenience. In case of conflict, the English version prevails, except where local law requires otherwise.</p>
-
-        <h3>15.6 Force Majeure</h3>
-        <p>We shall not be liable for any failure or delay in performing our obligations due to circumstances beyond our reasonable control.</p>
-
-        <div class="contact-box">
-            <h2 style="color: white; border: none; margin-top: 0;">16. Contact Information</h2>
-            <p>For questions about these Terms:</p>
-            <p>
-                <strong>Email:</strong> <a href="/cdn-cgi/l/email-protection#fa9d96958d98839d9b979fba8a97d4979f"><span class="__cf_email__" data-cf
+        <div class="footer">
+            <p>Stanisław Pawluczuk | Jednoosobowa Działalność Gospodarcza</p>
+            <p>NIP: 1231476789 | REGON: 387249521</p>
+            <p style="margin-top: 15px;">
+                <a href="index.html">Home</a> · 
+                <a href="privacy-policy.htm
