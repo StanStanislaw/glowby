@@ -4,50 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glowby - 特定商取引法に基づく表記</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Noto Sans JP', 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Yu Gothic', sans-serif;
             line-height: 1.8;
-            color: #e2e8f0;
-            background: #080812;
-            background-image: radial-gradient(ellipse 100% 70% at 50% 0%, rgba(139, 92, 246, 0.15) 0%, transparent 50%);
-            min-height: 100vh;
+            color: #1a1a2e;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
             padding: 20px;
         }
         .container {
-            max-width: 750px;
+            max-width: 700px;
             margin: 0 auto;
-            background: linear-gradient(160deg, rgba(20, 15, 35, 0.95) 0%, rgba(10, 8, 20, 0.98) 100%);
+            background: white;
             padding: 40px;
-            border-radius: 24px;
-            border: 1px solid rgba(139, 92, 246, 0.2);
-            box-shadow: 0 0 60px rgba(139, 92, 246, 0.1), 0 20px 40px rgba(0, 0, 0, 0.4);
-        }
-        .logo { text-align: center; margin-bottom: 30px; }
-        .logo-text {
-            font-family: 'Archivo Black', sans-serif;
-            font-size: 2rem;
-            background: linear-gradient(135deg, #a855f7 0%, #8b5cf6 50%, #6366f1 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
         }
         h1 {
-            color: #fff;
+            color: #8b5cf6;
             margin-bottom: 10px;
-            font-size: 1.6rem;
-            text-align: center;
-            font-weight: 700;
+            font-size: 1.8rem;
         }
         .subtitle {
             color: #64748b;
-            text-align: center;
             margin-bottom: 30px;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
         }
         table {
             width: 100%;
@@ -55,129 +37,151 @@
             margin: 20px 0;
         }
         th, td {
-            border: 1px solid rgba(139, 92, 246, 0.2);
+            border: 1px solid #e2e8f0;
             padding: 15px;
             text-align: left;
             vertical-align: top;
         }
         th {
-            background: rgba(139, 92, 246, 0.15);
-            color: #c4b5fd;
+            background: #f8fafc;
             font-weight: 600;
-            width: 35%;
-            font-size: 0.9rem;
+            width: 30%;
+            color: #475569;
         }
         td {
-            color: #94a3b8;
+            color: #334155;
+        }
+        a { color: #8b5cf6; }
+        .note {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
             font-size: 0.9rem;
         }
-        a { color: #a855f7; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .contact-box {
-            background: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(168, 85, 247, 0.1) 100%);
-            border: 1px solid rgba(139, 92, 246, 0.3);
-            padding: 20px;
-            margin: 25px 0;
-            border-radius: 12px;
-            text-align: center;
-        }
-        .contact-box p { color: #94a3b8; margin-bottom: 8px; }
-        .contact-email { font-size: 1.1rem; font-weight: 600; color: #a855f7; }
-        .warning-box {
-            background: rgba(251, 191, 36, 0.1);
-            border-left: 3px solid #fbbf24;
-            padding: 15px 20px;
+        .important {
+            background: #fee2e2;
+            border-left: 4px solid #ef4444;
+            padding: 15px;
             margin: 20px 0;
-            border-radius: 0 12px 12px 0;
+            border-radius: 0 8px 8px 0;
         }
-        .warning-box p { color: #fcd34d; margin-bottom: 0; font-size: 0.9rem; }
         .footer {
             margin-top: 30px;
             padding-top: 20px;
-            border-top: 1px solid rgba(139, 92, 246, 0.2);
+            border-top: 1px solid #e2e8f0;
             text-align: center;
-            font-size: 0.8rem;
             color: #64748b;
-        }
-        .footer a { color: #8b5cf6; }
-        @media (max-width: 600px) {
-            .container { padding: 24px 16px; }
-            th, td { padding: 12px 10px; font-size: 0.85rem; }
-            th { width: 40%; }
+            font-size: 0.85rem;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="logo"><span class="logo-text">GLOWBY</span></div>
-        
-        <h1>特定商取引法に基づく表記</h1>
+        <h1>🧠 特定商取引法に基づく表記</h1>
         <p class="subtitle">Commercial Disclosure under the Act on Specified Commercial Transactions</p>
-
-        <div class="contact-box">
-            <p><strong>お問い合わせ / Contact</strong></p>
-            <p class="contact-email"><a href="mailto:glowbygame@pm.me">glowbygame@pm.me</a></p>
-        </div>
 
         <table>
             <tr>
-                <th>販売業者<br><small>Seller</small></th>
-                <td>Stanisław Pawluczuk<br>Jednoosobowa Działalność Gospodarcza<br>(ポーランド法に基づく個人事業主)</td>
+                <th>販売業者名<br><small>Seller Name</small></th>
+                <td>Stanisław Pawluczuk<br>（スタニスワフ・パウルチュク）</td>
             </tr>
             <tr>
-                <th>運営統括責任者<br><small>Manager</small></th>
+                <th>運営統括責任者<br><small>Operations Manager</small></th>
                 <td>Stanisław Pawluczuk</td>
             </tr>
             <tr>
                 <th>所在地<br><small>Address</small></th>
-                <td>[YOUR_VIRTUAL_OFFICE_ADDRESS]<br>Poland (ポーランド共和国)</td>
+                <td>
+                    ご請求があった場合、遅滞なく開示いたします。<br>
+                    <small>Address will be disclosed without delay upon request.</small><br><br>
+                    お問い合わせ: <a href="/cdn-cgi/l/email-protection#37505b5840554e50565a5277475a195a52"><span class="__cf_email__" data-cfemail="0e696261796c77696f636b4e7e6320636b">[email&#160;protected]</span></a>
+                </td>
             </tr>
             <tr>
-                <th>連絡先<br><small>Contact</small></th>
-                <td><a href="mailto:glowbygame@pm.me">glowbygame@pm.me</a><br>※お問い合わせはメールにてお願いいたします</td>
+                <th>電話番号<br><small>Phone Number</small></th>
+                <td>
+                    ご請求があった場合、遅滞なく開示いたします。<br>
+                    <small>Phone number will be disclosed without delay upon request.</small><br><br>
+                    お問い合わせ: <a href="/cdn-cgi/l/email-protection#b7d0dbd8c0d5ced0d6dad2f7c7da99dad2"><span class="__cf_email__" data-cfemail="7b1c17140c19021c1a161e3b0b1655161e">[email&#160;protected]</span></a>
+                </td>
             </tr>
             <tr>
-                <th>販売価格<br><small>Price</small></th>
-                <td>アプリ内に表示された価格（税込）<br>Prices displayed in-app (tax included)</td>
+                <th>メールアドレス<br><small>Email</small></th>
+                <td><a href="/cdn-cgi/l/email-protection#fa9d96958d98839d9b979fba8a97d4979f"><span class="__cf_email__" data-cfemail="97f0fbf8e0f5eef0f6faf2d7e7fab9faf2">[email&#160;protected]</span></a></td>
+            </tr>
+            <tr>
+                <th>販売URL<br><small>Sales URL</small></th>
+                <td>
+                    App Store: Glowby<br>
+                    <small>（Apple App Storeで「Glowby」を検索）</small>
+                </td>
+            </tr>
+            <tr>
+                <th>販売価格<br><small>Prices</small></th>
+                <td>
+                    アプリ内購入画面に表示される価格<br>
+                    <small>As displayed on the in-app purchase screen</small><br>
+                    ※価格は予告なく変更される場合があります
+                </td>
             </tr>
             <tr>
                 <th>商品代金以外の必要料金<br><small>Additional Fees</small></th>
-                <td>なし（インターネット接続料はお客様負担）<br>None (internet fees are customer's responsibility)</td>
+                <td>
+                    なし<br>
+                    <small>（インターネット接続料金はお客様のご負担となります）</small>
+                </td>
             </tr>
             <tr>
-                <th>支払方法<br><small>Payment</small></th>
-                <td>Apple App Store決済<br>Apple App Store payment</td>
+                <th>支払方法<br><small>Payment Method</small></th>
+                <td>
+                    Apple App Store経由での決済<br>
+                    <small>（Apple ID に登録された支払方法）</small>
+                </td>
             </tr>
             <tr>
                 <th>支払時期<br><small>Payment Timing</small></th>
-                <td>購入時に即時決済<br>Charged immediately at purchase</td>
+                <td>購入確定時に即時決済</td>
             </tr>
             <tr>
-                <th>商品の引渡時期<br><small>Delivery</small></th>
-                <td>決済完了後、即時<br>Immediately after payment completion</td>
+                <th>商品の引渡時期<br><small>Delivery Timing</small></th>
+                <td>決済完了後、即時</td>
             </tr>
             <tr>
-                <th>返品・キャンセル<br><small>Refunds</small></th>
-                <td>デジタルコンテンツの性質上、原則として返品・返金不可。<br>Apple App Storeの返金ポリシーに準じます。<br><br>No refunds due to digital content nature.<br>Subject to Apple App Store refund policy.</td>
+                <th>返品・キャンセル<br><small>Returns/Cancellations</small></th>
+                <td>
+                    デジタルコンテンツの性質上、購入後の返品・キャンセルはお受けできません。<br>
+                    <small>Due to the nature of digital content, we cannot accept returns or cancellations after purchase.</small><br><br>
+                    ※App Storeの規約に基づく返金については、Appleにお問い合わせください。
+                </td>
+            </tr>
+            <tr>
+                <th>動作環境<br><small>System Requirements</small></th>
+                <td>
+                    iOS 14.0以降<br>
+                    インターネット接続（リーダーボード機能に必要）
+                </td>
             </tr>
         </table>
 
-        <div class="warning-box">
-            <p><strong>資金決済法に基づく表示（前払式支払手段）</strong><br>
-            有料で購入されたコインは、購入日から<strong>180日間</strong>有効です。期間内に使用されなかったコインは失効します。<br><br>
-            <small>Paid coins are valid for 180 days from purchase date under the Payment Services Act. Unused paid coins will expire after this period.</small></p>
+        <div class="important">
+            <strong>【重要】有料仮想通貨の有効期限について</strong><br><br>
+            資金決済法に基づき、有料で購入された仮想通貨（コイン等）は、購入日から<strong>180日間</strong>有効です。この期間内に使用されなかった有料仮想通貨は自動的に失効し、アカウントから削除されます。補償はございません。<br><br>
+            ゲームプレイや広告視聴で獲得した「無料」仮想通貨には有効期限はありません。<br><br>
+            <small>Pursuant to the Payment Services Act, paid virtual currency expires 180 days from purchase. Free currency earned through gameplay does not expire.</small>
+        </div>
+
+        <div class="note">
+            <strong>個人事業主による運営について</strong><br>
+            当サービスは、ポーランド共和国で登録された個人事業主（Jednoosobowa Działalność Gospodarcza）により運営されています。特定商取引法に基づき、個人事業主は住所および電話番号の公開に代えて、請求に応じて遅滞なく開示する方法が認められています。
+        </div>
+
+        <div style="background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%); color: white; padding: 25px; border-radius: 12px; margin: 20px 0; text-align: center;">
+            <strong style="font-size: 1.1rem;">📧 お問い合わせ / Contact Us</strong><br><br>
+            住所・電話番号の開示請求、その他ご質問は下記メールアドレスまで：<br>
+            <a href="/cdn-cgi/l/email-protection#aacdc6c5ddc8d3cdcbc7cfeadac784c7cf" style="color: #e0e7ff; font-size: 1.2rem; font-weight: bold;"><span class="__cf_email__" data-cfemail="47202b2830253e20262a2207372a692a22">[email&#160;protected]</span></a>
         </div>
 
         <div class="footer">
-            <p>ポーランド法人登録情報 / Polish Business Registration</p>
-            <p>NIP: 1231476789 | REGON: 387249521</p>
-            <p style="margin-top: 15px;">
-                <a href="index.html">Home</a> · 
-                <a href="privacy-policy.html">Privacy</a> · 
-                <a href="terms-of-service.html">Terms</a> · 
-                <a href="support.html">Support</a>
-            </p>
-        </div>
-    </div>
-</body>
-</html>
+            <p>© 2026
