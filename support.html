@@ -36,35 +36,11 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        h1 {
-            font-family: 'Archivo Black', sans-serif;
-            color: #fff;
-            margin-bottom: 10px;
-            font-size: 1.8rem;
-            text-align: center;
-        }
-        .subtitle {
-            color: #64748b;
-            margin-bottom: 30px;
-            font-size: 0.95rem;
-            text-align: center;
-        }
-        h2 {
-            color: #a855f7;
-            margin-top: 35px;
-            margin-bottom: 15px;
-            padding-bottom: 8px;
-            border-bottom: 1px solid rgba(139, 92, 246, 0.3);
-            font-size: 1.2rem;
-            font-weight: 600;
-        }
-        h3 {
-            color: #c4b5fd;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-size: 1rem;
-            font-weight: 600;
-        }
+        h1 { font-family: 'Archivo Black', sans-serif; color: #fff; margin-bottom: 10px; font-size: 1.8rem; text-align: center; }
+        .subtitle { color: #64748b; margin-bottom: 30px; font-size: 0.95rem; text-align: center; }
+        .last-updated { color: #64748b; margin-bottom: 30px; font-size: 0.85rem; text-align: center; }
+        h2 { color: #a855f7; margin-top: 35px; margin-bottom: 15px; padding-bottom: 8px; border-bottom: 1px solid rgba(139, 92, 246, 0.3); font-size: 1.2rem; font-weight: 600; }
+        h3 { color: #c4b5fd; margin-top: 20px; margin-bottom: 10px; font-size: 1rem; font-weight: 600; }
         p { margin-bottom: 15px; color: #94a3b8; }
         ul, ol { margin-bottom: 15px; padding-left: 25px; color: #94a3b8; }
         li { margin-bottom: 8px; }
@@ -74,58 +50,24 @@
         .contact-box {
             background: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(168, 85, 247, 0.1) 100%);
             border: 1px solid rgba(139, 92, 246, 0.3);
-            padding: 25px;
-            margin: 25px 0;
-            border-radius: 16px;
-            text-align: center;
+            padding: 25px; margin: 25px 0; border-radius: 16px; text-align: center;
         }
         .contact-box p { margin-bottom: 10px; }
-        .contact-email {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: #a855f7;
-        }
+        .contact-email { font-size: 1.2rem; font-weight: 600; color: #a855f7; }
         .faq-item {
             background: rgba(139, 92, 246, 0.05);
             border: 1px solid rgba(139, 92, 246, 0.1);
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 15px;
+            border-radius: 12px; padding: 20px; margin-bottom: 15px;
         }
-        .faq-item h3 {
-            margin-top: 0;
-            color: #e2e8f0;
-        }
+        .faq-item h3 { margin-top: 0; color: #e2e8f0; }
         .faq-item p { margin-bottom: 0; }
-        .tip-box {
-            background: rgba(34, 197, 94, 0.1);
-            border-left: 3px solid #22c55e;
-            padding: 15px 20px;
-            margin: 20px 0;
-            border-radius: 0 12px 12px 0;
-        }
+        .tip-box { background: rgba(34, 197, 94, 0.1); border-left: 3px solid #22c55e; padding: 15px 20px; margin: 20px 0; border-radius: 0 12px 12px 0; }
         .tip-box p { color: #86efac; margin-bottom: 0; }
-        .warning-box {
-            background: rgba(251, 191, 36, 0.1);
-            border-left: 3px solid #fbbf24;
-            padding: 15px 20px;
-            margin: 20px 0;
-            border-radius: 0 12px 12px 0;
-        }
+        .warning-box { background: rgba(251, 191, 36, 0.1); border-left: 3px solid #fbbf24; padding: 15px 20px; margin: 20px 0; border-radius: 0 12px 12px 0; }
         .warning-box p { color: #fcd34d; margin-bottom: 0; }
-        .footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(139, 92, 246, 0.2);
-            text-align: center;
-            font-size: 0.85rem;
-            color: #64748b;
-        }
+        .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(139, 92, 246, 0.2); text-align: center; font-size: 0.85rem; color: #64748b; }
         .footer a { color: #8b5cf6; }
-        @media (max-width: 600px) {
-            .container { padding: 24px 20px; }
-            h1 { font-size: 1.5rem; }
-        }
+        @media (max-width: 600px) { .container { padding: 24px 20px; } h1 { font-size: 1.5rem; } }
     </style>
 </head>
 <body>
@@ -137,7 +79,7 @@
 
         <div class="contact-box">
             <p><strong>Need help?</strong></p>
-            <p class="contact-email"><a href="/cdn-cgi/l/email-protection#5c3b30332b3e253b3d31391c2c31723139"><span class="__cf_email__" data-cfemail="395e55564e5b405e58545c79495417545c">[email&#160;protected]</span></a></p>
+            <p class="contact-email"><a class="glowby-email" href="#">Loading...</a></p>
             <p style="font-size: 0.85rem; color: #64748b;">We typically respond within 24-48 hours</p>
         </div>
 
@@ -145,31 +87,41 @@
         
         <h3>Basic Rules</h3>
         <ol>
-            <li><strong>Drop Tiles</strong> — Tap a column to drop the current tile</li>
-            <li><strong>Merge Numbers</strong> — When identical tiles touch, they combine (2+2=4, 4+4=8, etc.)</li>
-            <li><strong>Beat the Timer</strong> — Drop your tile before time runs out, or the game ends!</li>
-            <li><strong>Avoid the Asteroid Field!</strong> — If any tile lands in the danger zone at the bottom, the game ends instantly!</li>
-            <li><strong>Reach 2048</strong> — Keep merging to reach the golden 2048 tile and beyond!</li>
+            <li><strong>Drop Tiles</strong> &mdash; Tap a column to drop the current tile</li>
+            <li><strong>Merge Numbers</strong> &mdash; When identical tiles touch, they combine (2+2=4, 4+4=8, etc.)</li>
+            <li><strong>Beat the Timer</strong> &mdash; Drop your tile before time runs out, or the game ends!</li>
+            <li><strong>Avoid the Asteroid Belt!</strong> &mdash; If any tile lands in the Asteroid Belt at the top, the game ends instantly!</li>
+            <li><strong>Reach 2048</strong> &mdash; Keep merging to reach the golden 2048 tile and beyond!</li>
         </ol>
 
         <h3>Tips for High Scores</h3>
         <ul>
-            <li><strong>Build combos</strong> — Chain multiple merges for bonus points!</li>
-            <li><strong>Watch the asteroid field</strong> — If tiles get too high, you're in danger!</li>
-            <li><strong>Plan ahead</strong> — Look at your next tile and position strategically</li>
-            <li><strong>Stay calm</strong> — The timer gets faster as you progress. Stay focused!</li>
+            <li><strong>Build combos</strong> &mdash; Chain multiple merges for bonus points!</li>
+            <li><strong>Watch the Asteroid Belt</strong> &mdash; If tiles get too high, you're in danger!</li>
+            <li><strong>Plan ahead</strong> &mdash; Look at your next tile and position strategically</li>
+            <li><strong>Stay calm</strong> &mdash; The timer gets faster as you progress. Stay focused!</li>
+        </ul>
+
+        <h2>Game Features</h2>
+        <ul>
+            <li><strong>Game Center</strong> &mdash; Leaderboards and 11 achievements to unlock</li>
+            <li><strong>iCloud Sync</strong> &mdash; Your progress syncs automatically across all your Apple devices</li>
+            <li><strong>16 Skins</strong> &mdash; Unlock and customize Glowby with unique visual themes and sound effects</li>
+            <li><strong>11 Languages</strong> &mdash; English, French, Spanish, German, Italian, Portuguese, Polish, Ukrainian, Chinese, Japanese, Korean</li>
+            <li><strong>Offline Play</strong> &mdash; Full gameplay without an internet connection</li>
+            <li><strong>Haptic Feedback</strong> &mdash; Feel every merge and combo through precise haptics</li>
         </ul>
 
         <h2>Frequently Asked Questions</h2>
 
         <div class="faq-item">
             <h3>How do I restore my purchases?</h3>
-            <p>Go to Settings → Shop → Restore Purchases. This will recover any previously purchased items on your Apple ID.</p>
+            <p>Go to Shop &rarr; Restore Purchases. This will recover any previously purchased items on your Apple ID.</p>
         </div>
 
         <div class="faq-item">
             <h3>Why did I lose my progress?</h3>
-            <p>Progress is stored locally on your device. If you reinstalled the app or switched devices, your progress may not transfer. For leaderboard scores, make sure you're signed in with the same username.</p>
+            <p>Progress is stored locally on your device and synced via iCloud if enabled. If you reinstalled the app or switched devices, make sure you're signed into the same Apple ID so iCloud can restore your data. For leaderboard scores, ensure you're signed into Game Center.</p>
         </div>
 
         <div class="faq-item">
@@ -179,42 +131,47 @@
 
         <div class="faq-item">
             <h3>How do I delete my account?</h3>
-            <p>Go to Settings → scroll to the bottom → tap "Delete Account & Data". This will permanently remove your leaderboard entries and local data.</p>
+            <p>Go to Settings &rarr; scroll to the bottom &rarr; tap "Delete Account &amp; Data". This will permanently remove your leaderboard entries and local data.</p>
         </div>
 
         <div class="faq-item">
             <h3>Can I play offline?</h3>
-            <p>Yes! The core game works offline. However, leaderboards and cloud saves require an internet connection.</p>
+            <p>Yes! The core game works fully offline. Leaderboards, cloud saves, and rewarded video ads require an internet connection.</p>
         </div>
 
         <div class="faq-item">
-            <h3>How do I disable ads?</h3>
-            <p>Purchase the "Free Continues" pack in the Shop to remove interstitial ads and get unlimited continues.</p>
+            <h3>How do I remove ads?</h3>
+            <p>Purchase the "Free Continue Pack" in the Shop to remove ads and get unlimited continues. All ads in Glowby are optional rewarded videos &mdash; they are never forced or shown mid-gameplay.</p>
         </div>
 
         <div class="faq-item">
             <h3>The game is running slowly. What can I do?</h3>
-            <p>Try enabling "Smooth Mode" in Settings → Performance. This reduces visual effects for better performance on older devices.</p>
+            <p>Try enabling "Smooth Mode" in Settings &rarr; Performance. This reduces visual effects for better performance on older devices.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How does iCloud sync work?</h3>
+            <p>When signed into iCloud, your game progress, unlocked skins, achievements, and settings sync automatically across all your Apple devices. Make sure iCloud is enabled in your device Settings.</p>
         </div>
 
         <h2>Report a Bug</h2>
         <p>Found a bug? Please email us with:</p>
         <ul>
-            <li>Your device model (e.g., iPhone 14)</li>
-            <li>iOS version (e.g., iOS 17.2)</li>
+            <li>Your device model (e.g., iPhone 15, iPad Air)</li>
+            <li>iOS version (e.g., iOS 18.3)</li>
             <li>App version (shown in Settings)</li>
             <li>Steps to reproduce the issue</li>
             <li>Screenshots if possible</li>
         </ul>
 
         <div class="tip-box">
-            <p><strong>Tip:</strong> Check the App Store for updates — we regularly fix bugs and add improvements!</p>
+            <p><strong>Tip:</strong> Check the App Store for updates &mdash; we regularly fix bugs and add improvements!</p>
         </div>
 
         <h2>Refund Requests</h2>
         <p>All in-app purchases are processed by Apple. To request a refund:</p>
         <ol>
-            <li>Visit <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a></li>
+            <li>Visit <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a></li>
             <li>Sign in with your Apple ID</li>
             <li>Find your Glowby purchase</li>
             <li>Select "Request a refund"</li>
@@ -226,7 +183,18 @@
 
         <div class="footer">
             <p>Stanisław Pawluczuk | Jednoosobowa Działalność Gospodarcza</p>
+            <p>ul. Świeradowska 47, 02-662 Warszawa, Poland</p>
             <p>NIP: 1231476789 | REGON: 387249521</p>
             <p style="margin-top: 15px;">
-                <a href="index.html">Home</a> · 
-                <a href="privacy-policy.html">Priv
+                <a href="index.html">Home</a> &middot; 
+                <a href="privacy-policy.html">Privacy Policy</a> &middot; 
+                <a href="terms-of-service.html">Terms of Service</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+    (function(){var u='glowbygame',d='pm.me',e=u+'@'+d;document.querySelectorAll('.glowby-email').forEach(function(el){el.href='mai'+'lto:'+e;el.textContent=e;});})();
+    </script>
+</body>
+</html>

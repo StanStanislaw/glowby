@@ -11,130 +11,49 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-            line-height: 1.7;
-            color: #e2e8f0;
+            line-height: 1.7; color: #e2e8f0;
             background: #080812;
             background-image: radial-gradient(ellipse 100% 70% at 50% 0%, rgba(139, 92, 246, 0.15) 0%, transparent 50%);
-            min-height: 100vh;
-            padding: 20px;
+            min-height: 100vh; padding: 20px;
         }
         .container {
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 800px; margin: 0 auto;
             background: linear-gradient(160deg, rgba(20, 15, 35, 0.95) 0%, rgba(10, 8, 20, 0.98) 100%);
-            padding: 40px;
-            border-radius: 24px;
+            padding: 40px; border-radius: 24px;
             border: 1px solid rgba(139, 92, 246, 0.2);
             box-shadow: 0 0 60px rgba(139, 92, 246, 0.1), 0 20px 40px rgba(0, 0, 0, 0.4);
         }
-        .logo {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .logo-text {
-            font-family: 'Archivo Black', sans-serif;
-            font-size: 2rem;
-            background: linear-gradient(135deg, #a855f7 0%, #8b5cf6 50%, #6366f1 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        h1 {
-            font-family: 'Archivo Black', sans-serif;
-            color: #fff;
-            margin-bottom: 10px;
-            font-size: 1.8rem;
-            text-align: center;
-        }
-        .last-updated {
-            color: #64748b;
-            margin-bottom: 30px;
-            font-size: 0.85rem;
-            text-align: center;
-        }
-        h2 {
-            color: #a855f7;
-            margin-top: 35px;
-            margin-bottom: 15px;
-            padding-bottom: 8px;
-            border-bottom: 1px solid rgba(139, 92, 246, 0.3);
-            font-size: 1.2rem;
-            font-weight: 600;
-        }
-        h3 {
-            color: #c4b5fd;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-size: 1rem;
-            font-weight: 600;
-        }
+        .logo { text-align: center; margin-bottom: 30px; }
+        .logo-text { font-family: 'Archivo Black', sans-serif; font-size: 2rem; background: linear-gradient(135deg, #a855f7 0%, #8b5cf6 50%, #6366f1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        h1 { font-family: 'Archivo Black', sans-serif; color: #fff; margin-bottom: 10px; font-size: 1.8rem; text-align: center; }
+        .last-updated { color: #64748b; margin-bottom: 30px; font-size: 0.85rem; text-align: center; }
+        h2 { color: #a855f7; margin-top: 35px; margin-bottom: 15px; padding-bottom: 8px; border-bottom: 1px solid rgba(139, 92, 246, 0.3); font-size: 1.2rem; font-weight: 600; }
+        h3 { color: #c4b5fd; margin-top: 20px; margin-bottom: 10px; font-size: 1rem; font-weight: 600; }
         p { margin-bottom: 15px; color: #94a3b8; }
-        ul, ol {
-            margin-bottom: 15px;
-            padding-left: 25px;
-            color: #94a3b8;
-        }
+        ul, ol { margin-bottom: 15px; padding-left: 25px; color: #94a3b8; }
         li { margin-bottom: 8px; }
         a { color: #a855f7; text-decoration: none; }
         a:hover { text-decoration: underline; }
         strong { color: #e2e8f0; }
-        .highlight-box {
-            background: rgba(139, 92, 246, 0.1);
-            border-left: 3px solid #8b5cf6;
-            padding: 15px 20px;
-            margin: 20px 0;
-            border-radius: 0 12px 12px 0;
-        }
+        .highlight-box { background: rgba(139, 92, 246, 0.1); border-left: 3px solid #8b5cf6; padding: 15px 20px; margin: 20px 0; border-radius: 0 12px 12px 0; }
         .highlight-box p { margin-bottom: 0; }
-        .warning-box {
-            background: rgba(251, 191, 36, 0.1);
-            border-left: 3px solid #fbbf24;
-            padding: 15px 20px;
-            margin: 20px 0;
-            border-radius: 0 12px 12px 0;
-        }
+        .warning-box { background: rgba(251, 191, 36, 0.1); border-left: 3px solid #fbbf24; padding: 15px 20px; margin: 20px 0; border-radius: 0 12px 12px 0; }
         .warning-box p { color: #fcd34d; margin-bottom: 0; }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            font-size: 0.9rem;
-        }
-        th, td {
-            border: 1px solid rgba(139, 92, 246, 0.2);
-            padding: 12px;
-            text-align: left;
-        }
-        th {
-            background: rgba(139, 92, 246, 0.15);
-            color: #c4b5fd;
-            font-weight: 600;
-        }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.9rem; }
+        th, td { border: 1px solid rgba(139, 92, 246, 0.2); padding: 12px; text-align: left; }
+        th { background: rgba(139, 92, 246, 0.15); color: #c4b5fd; font-weight: 600; }
         td { color: #94a3b8; }
-        .footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(139, 92, 246, 0.2);
-            text-align: center;
-            font-size: 0.85rem;
-            color: #64748b;
-        }
+        .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(139, 92, 246, 0.2); text-align: center; font-size: 0.85rem; color: #64748b; }
         .footer a { color: #8b5cf6; }
-        @media (max-width: 600px) {
-            .container { padding: 24px 20px; }
-            h1 { font-size: 1.5rem; }
-            h2 { font-size: 1.1rem; }
-        }
+        @media (max-width: 600px) { .container { padding: 24px 20px; } h1 { font-size: 1.5rem; } h2 { font-size: 1.1rem; } }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="logo">
-            <span class="logo-text">GLOWBY</span>
-        </div>
+        <div class="logo"><span class="logo-text">GLOWBY</span></div>
         
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Last Updated: January 25, 2026</p>
+        <p class="last-updated">Last Updated: February 6, 2026</p>
 
         <div class="highlight-box">
             <p><strong>Summary:</strong> Glowby is a puzzle game. We collect minimal data, don't sell your information, and comply with GDPR, COPPA, PIPA, and other privacy laws worldwide.</p>
@@ -142,7 +61,8 @@
 
         <h2>1. Who We Are</h2>
         <p><strong>Data Controller:</strong> Stanisław Pawluczuk, operating as a sole proprietorship (Jednoosobowa Działalność Gospodarcza) under Polish law.</p>
-        <p><strong>Contact:</strong> <a href="/cdn-cgi/l/email-protection#dfb8b3b0a8bda6b8beb2ba9fafb2f1b2ba"><span class="__cf_email__" data-cfemail="6e090201190c17090f030b2e1e0340030b">[email&#160;protected]</span></a></p>
+        <p><strong>Address:</strong> ul. Świeradowska 47, 02-662 Warszawa, Poland</p>
+        <p><strong>Contact:</strong> <a class="glowby-email" href="#">Loading...</a></p>
         <p><strong>Business Registration:</strong> NIP: 1231476789 | REGON: 387249521</p>
 
         <h2>2. Information We Collect</h2>
@@ -156,45 +76,33 @@
         <h3>2.2 Automatically Collected Information</h3>
         <ul>
             <li><strong>Device Information:</strong> Device type, operating system, app version</li>
-            <li><strong>Game Data:</strong> Scores, achievements, gameplay statistics (stored locally)</li>
-            <li><strong>Analytics:</strong> Anonymous usage patterns to improve the game</li>
+            <li><strong>Game Data:</strong> Scores, achievements, gameplay statistics (stored locally and synced via iCloud if enabled)</li>
+            <li><strong>Analytics:</strong> Anonymous usage patterns via Firebase Analytics to improve the game</li>
         </ul>
 
         <h3>2.3 Information from Third Parties</h3>
         <ul>
-            <li><strong>Advertising Partners:</strong> AdMob may collect device identifiers for ad personalization (with consent)</li>
+            <li><strong>Advertising Partners:</strong> AdMob may collect device identifiers for ad personalization (only with your consent via App Tracking Transparency)</li>
+            <li><strong>Game Center:</strong> Player ID, scores, and achievements when you sign into Apple Game Center</li>
+            <li><strong>iCloud:</strong> Game progress and settings synced via Apple CloudKit</li>
             <li><strong>Analytics:</strong> Firebase Analytics for anonymous usage statistics</li>
         </ul>
 
         <h2>3. How We Use Your Information</h2>
         <table>
-            <tr>
-                <th>Purpose</th>
-                <th>Legal Basis (GDPR)</th>
-            </tr>
-            <tr>
-                <td>Display leaderboard rankings</td>
-                <td>Consent / Legitimate Interest</td>
-            </tr>
-            <tr>
-                <td>Show advertisements</td>
-                <td>Consent</td>
-            </tr>
-            <tr>
-                <td>Improve game performance</td>
-                <td>Legitimate Interest</td>
-            </tr>
-            <tr>
-                <td>Respond to support requests</td>
-                <td>Contract Performance</td>
-            </tr>
-            <tr>
-                <td>Prevent fraud and abuse</td>
-                <td>Legitimate Interest</td>
-            </tr>
+            <tr><th>Purpose</th><th>Legal Basis (GDPR)</th></tr>
+            <tr><td>Display leaderboard rankings</td><td>Consent / Legitimate Interest</td></tr>
+            <tr><td>Show advertisements</td><td>Consent (via App Tracking Transparency)</td></tr>
+            <tr><td>Sync game progress via iCloud</td><td>Contract Performance</td></tr>
+            <tr><td>Improve game performance</td><td>Legitimate Interest</td></tr>
+            <tr><td>Respond to support requests</td><td>Contract Performance</td></tr>
+            <tr><td>Prevent fraud and abuse</td><td>Legitimate Interest</td></tr>
         </table>
 
-        <h2>4. Children's Privacy (COPPA Compliance)</h2>
+        <h2>4. App Tracking Transparency</h2>
+        <p>Glowby uses Apple's App Tracking Transparency (ATT) framework. Before any tracking occurs, you will be asked for explicit permission. If you decline, only non-personalized, contextual ads will be shown. You can change this permission at any time in your device's Settings &rarr; Privacy &rarr; Tracking.</p>
+
+        <h2>5. Children's Privacy (COPPA Compliance)</h2>
         <div class="warning-box">
             <p><strong>Important:</strong> Glowby is rated 4+ and safe for all ages. We do NOT knowingly collect personal information from children under 13.</p>
         </div>
@@ -205,9 +113,9 @@
             <li>Only contextual (non-targeted) ads are shown</li>
             <li>No behavioral tracking occurs</li>
         </ul>
-        <p>Parents may contact us at <a href="/cdn-cgi/l/email-protection#1e797271697c67797f737b5e6e7330737b"><span class="__cf_email__" data-cfemail="d5b2b9baa2b7acb2b4b8b095a5b8fbb8b0">[email&#160;protected]</span></a> to review, delete, or refuse further collection of their child's information.</p>
+        <p>Parents may contact us at <a class="glowby-email" href="#">Loading...</a> to review, delete, or refuse further collection of their child's information.</p>
 
-        <h2>5. Your Rights</h2>
+        <h2>6. Your Rights</h2>
         <p>Depending on your location, you may have the following rights:</p>
         <ul>
             <li><strong>Access:</strong> Request a copy of your data</li>
@@ -217,61 +125,67 @@
             <li><strong>Object:</strong> Object to processing based on legitimate interests</li>
             <li><strong>Withdraw Consent:</strong> Withdraw consent at any time</li>
         </ul>
-        <p>To exercise these rights, use the "Delete Account" feature in Settings or contact us at <a href="/cdn-cgi/l/email-protection#31565d5e46534856505c5471415c1f5c54"><span class="__cf_email__" data-cfemail="98fff4f7effae1fff9f5fdd8e8f5b6f5fd">[email&#160;protected]</span></a>. We will respond without undue delay, within 30 days.</p>
+        <p>To exercise these rights, use the "Delete Account" feature in Settings or contact us at <a class="glowby-email" href="#">Loading...</a>. We will respond without undue delay, within 30 days.</p>
 
-        <h2>6. Data Retention</h2>
+        <h2>7. Data Retention</h2>
         <ul>
-            <li><strong>Game Progress:</strong> Stored locally on your device until you delete the app</li>
+            <li><strong>Game Progress:</strong> Stored locally on your device and in iCloud until you delete the app or your data</li>
             <li><strong>Leaderboard Data:</strong> Retained until you request deletion</li>
             <li><strong>Support Requests:</strong> Retained for 2 years for quality assurance</li>
             <li><strong>Analytics:</strong> Aggregated data retained for 14 months</li>
         </ul>
 
-        <h2>7. International Data Transfers</h2>
+        <h2>8. International Data Transfers</h2>
         <p>Your data may be transferred to and processed in countries outside your residence, including the United States (Firebase/Google services). We ensure appropriate safeguards through:</p>
         <ul>
             <li>EU Standard Contractual Clauses</li>
             <li>Data Processing Agreements with all service providers</li>
         </ul>
 
-        <h2>8. Third-Party Services</h2>
+        <h2>9. Third-Party Services</h2>
         <table>
-            <tr>
-                <th>Service</th>
-                <th>Purpose</th>
-                <th>Privacy Policy</th>
-            </tr>
-            <tr>
-                <td>Google AdMob</td>
-                <td>Advertising</td>
-                <td><a href="https://policies.google.com/privacy" target="_blank">Link</a></td>
-            </tr>
-            <tr>
-                <td>Firebase Analytics</td>
-                <td>Analytics</td>
-                <td><a href="https://firebase.google.com/support/privacy" target="_blank">Link</a></td>
-            </tr>
-            <tr>
-                <td>Apple App Store</td>
-                <td>Distribution, IAP</td>
-                <td><a href="https://www.apple.com/legal/privacy/" target="_blank">Link</a></td>
-            </tr>
+            <tr><th>Service</th><th>Purpose</th><th>Privacy Policy</th></tr>
+            <tr><td>Google AdMob</td><td>Advertising (rewarded video)</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Link</a></td></tr>
+            <tr><td>Firebase Analytics</td><td>Anonymous analytics</td><td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Link</a></td></tr>
+            <tr><td>Apple Game Center</td><td>Leaderboards &amp; achievements</td><td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Link</a></td></tr>
+            <tr><td>Apple iCloud (CloudKit)</td><td>Game progress sync</td><td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Link</a></td></tr>
+            <tr><td>Apple StoreKit</td><td>In-app purchases</td><td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Link</a></td></tr>
         </table>
 
-        <h2>9. Security</h2>
+        <h2>10. Security</h2>
         <p>We implement appropriate technical and organizational measures to protect your data, including:</p>
         <ul>
             <li>Encryption in transit (HTTPS/TLS)</li>
-            <li>Secure cloud infrastructure (Firebase)</li>
+            <li>Secure cloud infrastructure (Firebase, iCloud)</li>
             <li>Regular security reviews</li>
             <li>Minimal data collection principle</li>
         </ul>
 
-        <h2>10. Changes to This Policy</h2>
+        <h2>11. Changes to This Policy</h2>
         <p>We may update this Privacy Policy from time to time. We will notify you of significant changes through the app or by updating the "Last Updated" date. Continued use after changes constitutes acceptance.</p>
 
-        <h2>11. Contact Us</h2>
+        <h2>12. Contact Us</h2>
         <p>For privacy-related questions or to exercise your rights:</p>
         <div class="highlight-box">
-            <p><strong>Email:</strong> <a href="/cdn-cgi/l/email-protection#baddd6d5cdd8c3dddbd7dffacad794d7df"><span class="__cf_email__" data-cfemail="20474c4f57425947414d4560504d0e4d45">[email&#160;protected]</span></a></p>
-            <p><str
+            <p><strong>Email:</strong> <a class="glowby-email" href="#">Loading...</a></p>
+            <p><strong>Address:</strong> ul. Świeradowska 47, 02-662 Warszawa, Poland</p>
+            <p><strong>Business Registration:</strong> NIP: 1231476789 | REGON: 387249521</p>
+        </div>
+
+        <div class="footer">
+            <p>Stanisław Pawluczuk | Jednoosobowa Działalność Gospodarcza</p>
+            <p>ul. Świeradowska 47, 02-662 Warszawa, Poland</p>
+            <p>NIP: 1231476789 | REGON: 387249521</p>
+            <p style="margin-top: 15px;">
+                <a href="index.html">Home</a> &middot; 
+                <a href="terms-of-service.html">Terms of Service</a> &middot; 
+                <a href="support.html">Support</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+    (function(){var u='glowbygame',d='pm.me',e=u+'@'+d;document.querySelectorAll('.glowby-email').forEach(function(el){el.href='mai'+'lto:'+e;el.textContent=e;});})();
+    </script>
+</body>
+</html>

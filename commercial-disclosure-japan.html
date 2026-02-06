@@ -11,100 +11,36 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Noto Sans JP', 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-            line-height: 1.8;
-            color: #e2e8f0;
+            line-height: 1.8; color: #e2e8f0;
             background: #080812;
             background-image: radial-gradient(ellipse 100% 70% at 50% 0%, rgba(139, 92, 246, 0.15) 0%, transparent 50%);
-            min-height: 100vh;
-            padding: 20px;
+            min-height: 100vh; padding: 20px;
         }
         .container {
-            max-width: 750px;
-            margin: 0 auto;
+            max-width: 750px; margin: 0 auto;
             background: linear-gradient(160deg, rgba(20, 15, 35, 0.95) 0%, rgba(10, 8, 20, 0.98) 100%);
-            padding: 40px;
-            border-radius: 24px;
+            padding: 40px; border-radius: 24px;
             border: 1px solid rgba(139, 92, 246, 0.2);
             box-shadow: 0 0 60px rgba(139, 92, 246, 0.1), 0 20px 40px rgba(0, 0, 0, 0.4);
         }
         .logo { text-align: center; margin-bottom: 30px; }
-        .logo-text {
-            font-family: 'Archivo Black', sans-serif;
-            font-size: 2rem;
-            background: linear-gradient(135deg, #a855f7 0%, #8b5cf6 50%, #6366f1 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        h1 {
-            color: #fff;
-            margin-bottom: 10px;
-            font-size: 1.6rem;
-            text-align: center;
-            font-weight: 700;
-        }
-        .subtitle {
-            color: #64748b;
-            text-align: center;
-            margin-bottom: 30px;
-            font-size: 0.9rem;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        th, td {
-            border: 1px solid rgba(139, 92, 246, 0.2);
-            padding: 15px;
-            text-align: left;
-            vertical-align: top;
-        }
-        th {
-            background: rgba(139, 92, 246, 0.15);
-            color: #c4b5fd;
-            font-weight: 600;
-            width: 35%;
-            font-size: 0.9rem;
-        }
-        td {
-            color: #94a3b8;
-            font-size: 0.9rem;
-        }
+        .logo-text { font-family: 'Archivo Black', sans-serif; font-size: 2rem; background: linear-gradient(135deg, #a855f7 0%, #8b5cf6 50%, #6366f1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        h1 { color: #fff; margin-bottom: 10px; font-size: 1.6rem; text-align: center; font-weight: 700; }
+        .subtitle { color: #64748b; text-align: center; margin-bottom: 30px; font-size: 0.9rem; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { border: 1px solid rgba(139, 92, 246, 0.2); padding: 15px; text-align: left; vertical-align: top; }
+        th { background: rgba(139, 92, 246, 0.15); color: #c4b5fd; font-weight: 600; width: 35%; font-size: 0.9rem; }
+        td { color: #94a3b8; font-size: 0.9rem; }
         a { color: #a855f7; text-decoration: none; }
         a:hover { text-decoration: underline; }
-        .contact-box {
-            background: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(168, 85, 247, 0.1) 100%);
-            border: 1px solid rgba(139, 92, 246, 0.3);
-            padding: 20px;
-            margin: 25px 0;
-            border-radius: 12px;
-            text-align: center;
-        }
+        .contact-box { background: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(168, 85, 247, 0.1) 100%); border: 1px solid rgba(139, 92, 246, 0.3); padding: 20px; margin: 25px 0; border-radius: 12px; text-align: center; }
         .contact-box p { color: #94a3b8; margin-bottom: 8px; }
         .contact-email { font-size: 1.1rem; font-weight: 600; color: #a855f7; }
-        .warning-box {
-            background: rgba(251, 191, 36, 0.1);
-            border-left: 3px solid #fbbf24;
-            padding: 15px 20px;
-            margin: 20px 0;
-            border-radius: 0 12px 12px 0;
-        }
+        .warning-box { background: rgba(251, 191, 36, 0.1); border-left: 3px solid #fbbf24; padding: 15px 20px; margin: 20px 0; border-radius: 0 12px 12px 0; }
         .warning-box p { color: #fcd34d; margin-bottom: 0; font-size: 0.9rem; }
-        .footer {
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(139, 92, 246, 0.2);
-            text-align: center;
-            font-size: 0.8rem;
-            color: #64748b;
-        }
+        .footer { margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(139, 92, 246, 0.2); text-align: center; font-size: 0.8rem; color: #64748b; }
         .footer a { color: #8b5cf6; }
-        @media (max-width: 600px) {
-            .container { padding: 24px 16px; }
-            th, td { padding: 12px 10px; font-size: 0.85rem; }
-            th { width: 40%; }
-        }
+        @media (max-width: 600px) { .container { padding: 24px 16px; } th, td { padding: 12px 10px; font-size: 0.85rem; } th { width: 40%; } }
     </style>
 </head>
 <body>
@@ -116,7 +52,7 @@
 
         <div class="contact-box">
             <p><strong>お問い合わせ / Contact</strong></p>
-            <p class="contact-email"><a href="mailto:glowbygame@pm.me">glowbygame@pm.me</a></p>
+            <p class="contact-email"><a class="glowby-email" href="#">Loading...</a></p>
         </div>
 
         <table>
@@ -130,11 +66,15 @@
             </tr>
             <tr>
                 <th>所在地<br><small>Address</small></th>
-                <td>[YOUR_VIRTUAL_OFFICE_ADDRESS]<br>Poland (ポーランド共和国)</td>
+                <td>ul. Świeradowska 47, 02-662 Warszawa, Poland</td>
             </tr>
             <tr>
                 <th>連絡先<br><small>Contact</small></th>
-                <td><a href="mailto:glowbygame@pm.me">glowbygame@pm.me</a><br>※お問い合わせはメールにてお願いいたします</td>
+                <td><a class="glowby-email" href="#">Loading...</a><br>※お問い合わせはメールにてお願いいたします</td>
+            </tr>
+            <tr>
+                <th>電話番号<br><small>Phone Number</small></th>
+                <td>請求があった場合、遅滞なく開示いたします。<br>Disclosed without delay upon request.</td>
             </tr>
             <tr>
                 <th>販売価格<br><small>Price</small></th>
@@ -172,12 +112,16 @@
             <p>ポーランド法人登録情報 / Polish Business Registration</p>
             <p>NIP: 1231476789 | REGON: 387249521</p>
             <p style="margin-top: 15px;">
-                <a href="index.html">Home</a> · 
-                <a href="privacy-policy.html">Privacy</a> · 
-                <a href="terms-of-service.html">Terms</a> · 
+                <a href="index.html">Home</a> &middot; 
+                <a href="privacy-policy.html">Privacy</a> &middot; 
+                <a href="terms-of-service.html">Terms</a> &middot; 
                 <a href="support.html">Support</a>
             </p>
         </div>
     </div>
+
+    <script>
+    (function(){var u='glowbygame',d='pm.me',e=u+'@'+d;document.querySelectorAll('.glowby-email').forEach(function(el){el.href='mai'+'lto:'+e;el.textContent=e;});})();
+    </script>
 </body>
 </html>
