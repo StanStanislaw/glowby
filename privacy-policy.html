@@ -53,10 +53,10 @@
         <div class="logo"><span class="logo-text">GLOWBY</span></div>
         
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Last Updated: February 6, 2026</p>
+        <p class="last-updated">Last Updated: March 29, 2026</p>
 
         <div class="highlight-box">
-            <p><strong>Summary:</strong> Glowby is a puzzle game. We collect minimal data, don't sell your information, and comply with GDPR, COPPA, PIPA, and other privacy laws worldwide.</p>
+            <p><strong>Summary:</strong> Glowby is a puzzle game. We collect minimal data, do not sell your information, and are committed to respecting applicable privacy laws including the GDPR, UK GDPR, CCPA, and COPPA.</p>
         </div>
 
         <h2>1. Who We Are</h2>
@@ -76,44 +76,47 @@
         <h3>2.2 Automatically Collected Information</h3>
         <ul>
             <li><strong>Device Information:</strong> Device type, operating system, app version</li>
-            <li><strong>Game Data:</strong> Scores, achievements, gameplay statistics (stored locally and synced via iCloud if enabled)</li>
-            <li><strong>Analytics:</strong> Anonymous usage patterns via Firebase Analytics to improve the game</li>
+            <li><strong>Game Data:</strong> Scores, achievements, and gameplay statistics are stored locally on your device and synced via iCloud if enabled. If you use leaderboards, your custom username and scores are also stored on our servers via Google Cloud Firestore.</li>
+            <li><strong>Analytics:</strong> Pseudonymous usage data via Firebase Analytics to improve the game (app-instance identifiers, not linked to your identity)</li>
+            <li><strong>Transaction Data:</strong> If you make in-app purchases, we receive non-financial transaction identifiers and purchase status from Apple StoreKit to unlock content. We do not process or store your payment card details.</li>
         </ul>
 
         <h3>2.3 Information from Third Parties</h3>
         <ul>
-            <li><strong>Advertising Partners:</strong> AdMob may collect device identifiers for ad personalization (only with your consent via App Tracking Transparency)</li>
+            <li><strong>Advertising Partners:</strong> AdMob may collect device identifiers for ad personalization (only with your consent, obtained via our in-app consent screen and/or App Tracking Transparency on iOS)</li>
             <li><strong>Game Center:</strong> Player ID, scores, and achievements when you sign into Apple Game Center</li>
             <li><strong>iCloud:</strong> Game progress and settings synced via Apple CloudKit</li>
-            <li><strong>Analytics:</strong> Firebase Analytics for anonymous usage statistics</li>
+            <li><strong>Analytics:</strong> Firebase Analytics for pseudonymous usage statistics</li>
         </ul>
 
         <h2>3. How We Use Your Information</h2>
         <table>
             <tr><th>Purpose</th><th>Legal Basis (GDPR)</th></tr>
-            <tr><td>Display leaderboard rankings</td><td>Consent / Legitimate Interest</td></tr>
-            <tr><td>Show advertisements</td><td>Consent (via App Tracking Transparency)</td></tr>
+            <tr><td>Display leaderboard rankings</td><td>Consent</td></tr>
+            <tr><td>Show personalized advertisements</td><td>Consent</td></tr>
             <tr><td>Sync game progress via iCloud</td><td>Contract Performance</td></tr>
-            <tr><td>Improve game performance</td><td>Legitimate Interest</td></tr>
+            <tr><td>Improve game performance (Analytics)</td><td>Consent (EEA/UK) / Legitimate Interest (elsewhere)</td></tr>
             <tr><td>Respond to support requests</td><td>Contract Performance</td></tr>
             <tr><td>Prevent fraud and abuse</td><td>Legitimate Interest</td></tr>
         </table>
 
-        <h2>4. App Tracking Transparency</h2>
-        <p>Glowby uses Apple's App Tracking Transparency (ATT) framework. Before any tracking occurs, you will be asked for explicit permission. If you decline, only non-personalized, contextual ads will be shown. You can change this permission at any time in your device's Settings &rarr; Privacy &rarr; Tracking.</p>
+        <h2>4. Advertising &amp; Tracking Consent</h2>
+        <p>In the European Economic Area (EEA) and the UK, we use an in-app consent screen to collect your preference for analytics and personalized advertising before any non-essential tracking begins. On iOS, Apple's App Tracking Transparency (ATT) framework provides additional control over cross-app tracking.</p>
+        <p>If you decline personalized advertising or deny ATT permission, we will serve non-personalized ads and will not access your device's advertising identifier. Our ad partners may use non-identifying contextual signals for ad delivery and fraud prevention, but will not use device identifiers for behavioral targeting. You can change your ATT preference at any time in your device's Settings &rarr; Privacy &rarr; Tracking.</p>
 
         <h2>5. Children's Privacy (COPPA Compliance)</h2>
         <div class="warning-box">
-            <p><strong>Important:</strong> Glowby is rated 4+ and safe for all ages. We do NOT knowingly collect personal information from children under 13.</p>
+            <p><strong>Important:</strong> Glowby is a mixed-audience game rated 4+. We use a neutral age screen on first launch to determine age-appropriate experiences.</p>
         </div>
-        <p>For users under 13:</p>
+        <p>If a user indicates they are under 13 (or under the applicable age of digital consent in their jurisdiction), we automatically:</p>
         <ul>
-            <li>We do not collect, use, or disclose personal information</li>
-            <li>Personalized advertising is disabled</li>
-            <li>Only contextual (non-targeted) ads are shown</li>
-            <li>No behavioral tracking occurs</li>
+            <li>Disable Firebase Analytics and all non-essential tracking</li>
+            <li>Disable personalized advertising — only contextual, child-directed ads are shown</li>
+            <li>Do not request tracking consent (ATT prompt is not shown)</li>
+            <li>Configure AdMob with child-directed treatment flags and G content rating</li>
+            <li>Disable custom username creation — under-age users are assigned an auto-generated player name to prevent accidental sharing of personal information</li>
         </ul>
-        <p>Parents may contact us at <a class="glowby-email" href="#">Loading...</a> to review, delete, or refuse further collection of their child's information.</p>
+        <p>We do not require children to provide any personal information to use the game. Because child profiles are entirely anonymous and store no personal identifiers on our servers, data must be managed directly on the child's device using the in-app "Delete Account" feature or by uninstalling the app. Parents may contact us at <a class="glowby-email" href="#">Loading...</a> with any questions about our child safety practices.</p>
 
         <h2>6. Your Rights</h2>
         <p>Depending on your location, you may have the following rights:</p>
@@ -124,29 +127,48 @@
             <li><strong>Portability:</strong> Receive your data in a machine-readable format</li>
             <li><strong>Object:</strong> Object to processing based on legitimate interests</li>
             <li><strong>Withdraw Consent:</strong> Withdraw consent at any time</li>
+            <li><strong>Lodge a Complaint:</strong> You have the right to lodge a complaint with a supervisory authority. Our lead supervisory authority is the President of the Personal Data Protection Office (UODO) in Poland — <a href="https://uodo.gov.pl" target="_blank" rel="noopener">uodo.gov.pl</a></li>
         </ul>
-        <p>To exercise these rights, use the "Delete Account" feature in Settings or contact us at <a class="glowby-email" href="#">Loading...</a>. We will respond without undue delay, within 30 days.</p>
+        <p>To exercise these rights, use the "Delete Account" feature in Settings or contact us at <a class="glowby-email" href="#">Loading...</a>. We will respond without undue delay, in accordance with applicable statutory timeframes (within 15 days for access requests under Brazil's LGPD, and within 30 days under GDPR/CCPA).</p>
+
+        <h3>6.1 United Kingdom</h3>
+        <p>If you are located in the United Kingdom, your rights under the UK General Data Protection Regulation (UK GDPR) mirror those listed above. You may also lodge a complaint with the Information Commissioner's Office (ICO) at <a href="https://ico.org.uk" target="_blank" rel="noopener">ico.org.uk</a>.</p>
+
+        <h3>6.2 California (CCPA/CPRA)</h3>
+        <p>If you are a California resident, the California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA) provide you with the following rights:</p>
+        <ul>
+            <li><strong>Right to Know:</strong> You may request the categories and specific pieces of personal information we have collected about you.</li>
+            <li><strong>Right to Delete:</strong> You may request deletion of your personal information.</li>
+            <li><strong>Right to Opt-Out:</strong> You may opt out of the "sale" or "sharing" of your personal information. Glowby does not sell personal information. When personalized advertising is enabled, AdMob may share device identifiers with advertising partners, which may constitute "sharing" under the CCPA. You can control this through App Tracking Transparency (iOS) or by contacting us.</li>
+            <li><strong>Right to Non-Discrimination:</strong> We will not discriminate against you for exercising your privacy rights.</li>
+        </ul>
+        <p>To exercise these rights, contact us at <a class="glowby-email" href="#">Loading...</a>.</p>
+
+        <h3>6.3 Brazil (LGPD)</h3>
+        <p>If you are located in Brazil, you have equivalent rights under the Lei Geral de Proteção de Dados (LGPD), including access, correction, deletion, portability, and the right to information about data sharing with third parties. To exercise these rights, contact us at <a class="glowby-email" href="#">Loading...</a>.</p>
 
         <h2>7. Data Retention</h2>
         <ul>
             <li><strong>Game Progress:</strong> Stored locally on your device and in iCloud until you delete the app or your data</li>
-            <li><strong>Leaderboard Data:</strong> Retained until you request deletion</li>
+            <li><strong>Leaderboard Data:</strong> Custom usernames and Firestore leaderboard data are retained while your account is active, and deleted upon request or after 2 years of inactivity. Scores submitted to Apple Game Center are retained by Apple and must be managed in your iOS device Settings.</li>
             <li><strong>Support Requests:</strong> Retained for 2 years for quality assurance</li>
-            <li><strong>Analytics:</strong> Aggregated data retained for 14 months</li>
+            <li><strong>Analytics:</strong> Pseudonymous user-level event data is retained in Firebase for up to 14 months, after which only fully anonymized, aggregated statistics are kept.</li>
         </ul>
 
         <h2>8. International Data Transfers</h2>
         <p>Your data may be transferred to and processed in countries outside your residence, including the United States (Firebase/Google services). We ensure appropriate safeguards through:</p>
         <ul>
             <li>EU Standard Contractual Clauses</li>
+            <li>UK International Data Transfer Agreement (IDTA) or UK Addendum to EU SCCs, where applicable</li>
             <li>Data Processing Agreements with all service providers</li>
         </ul>
 
         <h2>9. Third-Party Services</h2>
         <table>
             <tr><th>Service</th><th>Purpose</th><th>Privacy Policy</th></tr>
-            <tr><td>Google AdMob</td><td>Advertising (rewarded video)</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Link</a></td></tr>
-            <tr><td>Firebase Analytics</td><td>Anonymous analytics</td><td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Link</a></td></tr>
+            <tr><td>Google AdMob</td><td>Advertising (interstitial and rewarded video)</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Link</a></td></tr>
+            <tr><td>Firebase Analytics</td><td>Pseudonymous usage analytics</td><td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Link</a></td></tr>
+            <tr><td>Google Cloud Firestore</td><td>Leaderboard profiles, usernames, account data</td><td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Link</a></td></tr>
             <tr><td>Apple Game Center</td><td>Leaderboards &amp; achievements</td><td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Link</a></td></tr>
             <tr><td>Apple iCloud (CloudKit)</td><td>Game progress sync</td><td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Link</a></td></tr>
             <tr><td>Apple StoreKit</td><td>In-app purchases</td><td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Link</a></td></tr>
@@ -162,7 +184,7 @@
         </ul>
 
         <h2>11. Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. We will notify you of significant changes through the app or by updating the "Last Updated" date. Continued use after changes constitutes acceptance.</p>
+        <p>We may update this Privacy Policy from time to time. We will notify you of material changes via an in-app notification. Where required by applicable law, we will request your explicit consent to the updated policy before continuing to process your personal data under the new terms.</p>
 
         <h2>12. Contact Us</h2>
         <p>For privacy-related questions or to exercise your rights:</p>
@@ -187,5 +209,6 @@
     <script>
     (function(){var u='glowbygame',d='pm.me',e=u+'@'+d;document.querySelectorAll('.glowby-email').forEach(function(el){el.href='mai'+'lto:'+e;el.textContent=e;});})();
     </script>
+    <noscript><style>.glowby-email::after{content:'glowbygame [at] pm.me'}</style></noscript>
 </body>
 </html>

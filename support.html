@@ -75,12 +75,13 @@
         <div class="logo"><span class="logo-text">GLOWBY</span></div>
         
         <h1>Support Center</h1>
+        <p class="last-updated">Last Updated: March 29, 2026</p>
         <p class="subtitle">We're here to help! Find answers below or contact us directly.</p>
 
         <div class="contact-box">
             <p><strong>Need help?</strong></p>
             <p class="contact-email"><a class="glowby-email" href="#">Loading...</a></p>
-            <p style="font-size: 0.85rem; color: #64748b;">We typically respond within 24-48 hours</p>
+            <p style="font-size: 0.85rem; color: #64748b;">We aim to respond within 1-3 business days</p>
         </div>
 
         <h2>How to Play</h2>
@@ -116,7 +117,7 @@
 
         <div class="faq-item">
             <h3>How do I restore my purchases?</h3>
-            <p>Go to Shop &rarr; Restore Purchases. This will recover any previously purchased items on your Apple ID.</p>
+            <p>Go to Shop &rarr; Restore Purchases. This will recover non-consumable purchases (such as "Remove Ads" or Premium Skins) linked to your Apple ID. Consumable items like Coins cannot be recovered using the Restore Purchases button. However, your Coin balance is part of your game save — if you reinstall the app while signed into the same iCloud account, your balance will be restored from your cloud backup (provided it synced before app uninstallation).</p>
         </div>
 
         <div class="faq-item">
@@ -126,12 +127,12 @@
 
         <div class="faq-item">
             <h3>How do I change my username?</h3>
-            <p>Go to Settings and tap the edit button next to your username. Note: Inappropriate names may be reset.</p>
+            <p>Go to Settings and tap the edit button next to your username. Usernames must comply with our <a href="terms-of-service.html">Terms of Service</a>. Offensive or inappropriate names will be reset, and repeat offenders may be banned from leaderboards. To report an inappropriate username, please email us with a screenshot.</p>
         </div>
 
         <div class="faq-item">
             <h3>How do I delete my account?</h3>
-            <p>Go to Settings &rarr; scroll to the bottom &rarr; tap "Delete Account &amp; Data". This will permanently remove your leaderboard entries and local data.</p>
+            <p>Go to Settings &rarr; scroll to the bottom &rarr; tap "Delete Account &amp; Data". This will permanently remove your cloud-synced game data, username, and local progress. Note: To remove your scores from Game Center leaderboards, you must manage your Game Center data directly in your iOS device Settings.</p>
         </div>
 
         <div class="faq-item">
@@ -141,7 +142,7 @@
 
         <div class="faq-item">
             <h3>How do I remove ads?</h3>
-            <p>Purchase the "Free Continue Pack" in the Shop to remove ads and get unlimited continues. All ads in Glowby are optional rewarded videos &mdash; they are never forced or shown mid-gameplay.</p>
+            <p>Purchase "Remove Ads" in the Shop to permanently remove ads between games. You can also earn coins and use them to continue your game, or watch a short rewarded video to continue for free.</p>
         </div>
 
         <div class="faq-item">
@@ -151,7 +152,7 @@
 
         <div class="faq-item">
             <h3>How does iCloud sync work?</h3>
-            <p>When signed into iCloud, your game progress, unlocked skins, achievements, and settings sync automatically across all your Apple devices. Make sure iCloud is enabled in your device Settings.</p>
+            <p>When signed into iCloud, your game progress, unlocked skins, achievements, and settings sync automatically across all your Apple devices. Make sure iCloud is enabled in your device Settings. Note: Progress made while offline will only sync once you reconnect to the internet. If you uninstall the app before it can sync, unsaved offline progress may be lost.</p>
         </div>
 
         <h2>Report a Bug</h2>
@@ -178,7 +179,31 @@
         </ol>
 
         <div class="warning-box">
-            <p><strong>Note:</strong> Refunds are at Apple's discretion. Coins spent before a refund cannot be recovered.</p>
+            <p><strong>Note:</strong> Refunds are at Apple's discretion and are subject to Apple's refund policy. If a refund is granted for a Coin purchase, those Coins will be deducted from your in-game balance. Items unlocked with refunded Coins may be revoked.</p>
+        </div>
+
+        <h2>Delete Your Account &amp; Data</h2>
+        <p>You have the right to delete your account and all associated data at any time.</p>
+
+        <h3>Option 1: In-App (Recommended)</h3>
+        <p>Open Glowby &rarr; Settings &rarr; scroll to the bottom &rarr; tap <strong>"Delete Account &amp; Data"</strong>. This will immediately and permanently remove:</p>
+        <ul>
+            <li>Your cloud-synced game data and username</li>
+            <li>Your local game progress and preferences</li>
+            <li>Your Firestore account data</li>
+        </ul>
+        <p style="font-size: 0.85rem; color: #64748b;">Note: To remove your scores from Game Center leaderboards, you must manage your Game Center data directly in your iOS device Settings &rarr; Game Center.</p>
+
+        <h3>Option 2: Email Request</h3>
+        <p>If you cannot access the app, you can request deletion of your server-side data by email:</p>
+        <div class="contact-box">
+            <p>Send an email to <a class="glowby-email" href="#">Loading...</a> with the subject line:</p>
+            <p><strong>"Delete My Account"</strong></p>
+            <p style="font-size: 0.85rem; color: #64748b; margin-top: 10px;">Please include your Glowby username and any details that help verify account ownership (e.g., approximate coin balance, equipped skin, or device model). We cannot process deletion requests based solely on a public username without reasonable verification. We will delete your server-side account data within applicable statutory timeframes (typically 15 to 30 days depending on your jurisdiction). Note: Because your save data is stored in your personal iCloud, we cannot remotely delete local or iCloud data — you must manage that through your device Settings.</p>
+        </div>
+
+        <div class="warning-box">
+            <p><strong>Important:</strong> Account deletion is permanent and cannot be undone. You will lose all game progress, earned skins, and coins. Non-consumable in-app purchases (such as "Remove Ads" or Premium Skins) can be restored via Apple's Restore Purchases, but consumable purchases (like Coins), earned progress, and skins unlocked through gameplay are permanently lost.</p>
         </div>
 
         <div class="footer">
@@ -196,5 +221,6 @@
     <script>
     (function(){var u='glowbygame',d='pm.me',e=u+'@'+d;document.querySelectorAll('.glowby-email').forEach(function(el){el.href='mai'+'lto:'+e;el.textContent=e;});})();
     </script>
+    <noscript><style>.glowby-email::after{content:'glowbygame [at] pm.me'}</style></noscript>
 </body>
 </html>
