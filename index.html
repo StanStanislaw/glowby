@@ -31,6 +31,163 @@
             font-size: 4rem;
             margin-bottom: 10px;
         }
+        .glowby-logo {
+            width: 220px;
+            height: 190px;
+            margin: 0 auto 20px;
+            position: relative;
+            filter: drop-shadow(0 0 30px rgba(168, 85, 247, 0.5));
+        }
+        .glowby-logo .brain {
+            width: 200px;
+            height: 160px;
+            background: linear-gradient(145deg, #d8b4fe 0%, #c084fc 25%, #a855f7 50%, #8b5cf6 75%, #7c3aed 100%);
+            border-radius: 100px 100px 88px 88px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow:
+                inset 0 -25px 52px rgba(88, 28, 135, 0.3),
+                inset 0 12px 30px rgba(255,255,255,0.2);
+        }
+        .glowby-logo .brain::before {
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: 21px;
+            width: 155px;
+            height: 71px;
+            border: 6px solid rgba(255,255,255,0.2);
+            border-radius: 50%;
+            border-bottom: none;
+        }
+        .glowby-logo .face {
+            position: absolute;
+            bottom: 6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 143px;
+            height: 92px;
+            background: linear-gradient(180deg, #fff 0%, #faf5ff 100%);
+            border-radius: 71px 71px 63px 63px;
+            box-shadow: 0 0 17px rgba(255,255,255,0.2);
+            z-index: 2;
+        }
+        .glowby-logo .eyes {
+            position: absolute;
+            top: 21px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 38px;
+        }
+        .glowby-logo .eye {
+            width: 25px;
+            height: 25px;
+            background: radial-gradient(circle at 30% 30%, #7c3aed, #4c1d95);
+            border-radius: 50%;
+            box-shadow: 0 0 8px rgba(139, 92, 246, 0.4);
+            position: relative;
+        }
+        .glowby-logo .eye::after {
+            content: '';
+            position: absolute;
+            top: 4px;
+            right: 4px;
+            width: 8px;
+            height: 8px;
+            background: #fff;
+            border-radius: 50%;
+        }
+        .glowby-logo .mouth {
+            position: absolute;
+            bottom: 21px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 42px;
+            height: 21px;
+            border: 6px solid #4c1d95;
+            border-top: none;
+            border-radius: 0 0 25px 25px;
+        }
+        .glowby-mini {
+            width: 80px;
+            height: 70px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .glowby-mini .brain {
+            width: 72px;
+            height: 58px;
+            background: linear-gradient(145deg, #d8b4fe 0%, #c084fc 25%, #a855f7 50%, #8b5cf6 75%, #7c3aed 100%);
+            border-radius: 36px 36px 32px 32px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow:
+                inset 0 -9px 19px rgba(88, 28, 135, 0.3),
+                inset 0 4px 11px rgba(255,255,255,0.2);
+        }
+        .glowby-mini .brain::before {
+            content: '';
+            position: absolute;
+            top: 11px;
+            left: 8px;
+            width: 56px;
+            height: 26px;
+            border: 2px solid rgba(255,255,255,0.2);
+            border-radius: 50%;
+            border-bottom: none;
+        }
+        .glowby-mini .face {
+            position: absolute;
+            bottom: 2px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 52px;
+            height: 33px;
+            background: linear-gradient(180deg, #fff 0%, #faf5ff 100%);
+            border-radius: 26px 26px 23px 23px;
+            z-index: 2;
+        }
+        .glowby-mini .eyes {
+            position: absolute;
+            top: 7px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 14px;
+        }
+        .glowby-mini .eye {
+            width: 9px;
+            height: 9px;
+            background: radial-gradient(circle at 30% 30%, #7c3aed, #4c1d95);
+            border-radius: 50%;
+            position: relative;
+        }
+        .glowby-mini .eye::after {
+            content: '';
+            position: absolute;
+            top: 1px;
+            right: 1px;
+            width: 3px;
+            height: 3px;
+            background: #fff;
+            border-radius: 50%;
+        }
+        .glowby-mini .mouth {
+            position: absolute;
+            bottom: 7px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 15px;
+            height: 8px;
+            border: 2px solid #4c1d95;
+            border-top: none;
+            border-radius: 0 0 9px 9px;
+        }
         h1 {
             font-size: 3rem;
             background: linear-gradient(135deg, #8b5cf6, #a855f7, #d946ef);
@@ -177,16 +334,25 @@
 </head>
 <body>
     <section class="hero">
-        <div class="logo">&#x1F9E0;</div>
+        <div class="glowby-logo">
+            <div class="brain"></div>
+            <div class="face">
+                <div class="eyes">
+                    <div class="eye"></div>
+                    <div class="eye"></div>
+                </div>
+                <div class="mouth"></div>
+            </div>
+        </div>
         <h1>Glowby</h1>
         <p class="tagline">Drop, Match &amp; Merge Numbers!</p>
         <p style="color: #64748b; max-width: 500px; margin: 0 auto 30px;">
             A fresh twist on number puzzles. Drop tiles, merge matching numbers, race the timer, and compete for the highest score!
         </p>
         
-        <!-- App Store Badge - Replace href with actual App Store link when published -->
+        <!-- App Store Badge -->
         <div class="app-badge">
-            <a href="#" target="_blank" rel="noopener">
+            <a href="https://apps.apple.com/app/id6757088810" target="_blank" rel="noopener">
                 <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store">
             </a>
         </div>
@@ -234,7 +400,18 @@
             <p>Colorblind mode, high contrast, reduced motion support, and haptic feedback that lets you feel every merge.</p>
         </div>
         <div class="feature">
-            <div class="feature-icon">&#x1F9E0;</div>
+            <div class="feature-icon">
+                <div class="glowby-mini">
+                    <div class="brain"></div>
+                    <div class="face">
+                        <div class="eyes">
+                            <div class="eye"></div>
+                            <div class="eye"></div>
+                        </div>
+                        <div class="mouth"></div>
+                    </div>
+                </div>
+            </div>
             <h3>Meet Glowby</h3>
             <p>Your purple brain companion reacts to every run &mdash; cheering combos, wincing at close calls, and panicking when the board fills up.</p>
         </div>
@@ -275,7 +452,7 @@
         <h2>Ready to Play?</h2>
         <p>Download Glowby free on the App Store and start your puzzle journey!</p>
         <div class="app-badge">
-            <a href="#" target="_blank" rel="noopener">
+            <a href="https://apps.apple.com/app/id6757088810" target="_blank" rel="noopener">
                 <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store">
             </a>
         </div>
